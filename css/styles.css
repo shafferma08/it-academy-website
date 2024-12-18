@@ -1,0 +1,17 @@
+/* Reset all styles globally */
+* {
+    all: unset;
+  }
+  
+  /* Start of Cybersecurity unique CSS */
+  
+  /* Remove bullets from the unordered list */
+  
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* End of Cybersecurity unique CSS */
+  
