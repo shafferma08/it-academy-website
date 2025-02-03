@@ -46,7 +46,6 @@
 body {
     font-family: var(--font-body);
     line-height: var(--line-height-body);
-    /* padding: var(--spacing-md); */
     background-color: var(--neutral-white);
     color: var(--neutral-black);
     font-size: var(--font-size-body);
