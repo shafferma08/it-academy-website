@@ -94,7 +94,7 @@ html, body {
   button {
     font-family: var(--font-accent);
     padding: var(--spacing-sm) var(--spacing-md);
-    margin: var(--spacing-xs);
+    margin: var(--spacing-sm);
     border-radius: var(--border-radius);
     border: none;
     cursor: pointer;
