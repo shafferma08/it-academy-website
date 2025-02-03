@@ -43,12 +43,15 @@
   }
 
   /* Body Spacing */
-body {
+html, body {
     font-family: var(--font-body);
     line-height: var(--line-height-body);
     background-color: var(--neutral-white);
     color: var(--neutral-black);
     font-size: var(--font-size-body);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
   }
   
   /* Headings */
@@ -139,6 +142,11 @@ body {
     color: var(--neutral-white);
     text-decoration: none;
     font-family: var(--font-accent);
+  }
+
+  /* Main */
+  main {
+    flex: 1;
   }
   
   /* Footer */
