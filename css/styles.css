@@ -198,3 +198,127 @@ section {
     flex-direction: column;
   }
 }
+
+/* Cybersecurity section CSS */
+.Cybersecurity-nav-box
+.container
+.img-h1-mission-statement-box
+.cybersecurity-img1
+.Cybersecurity-h1-box
+.Cybersecurity-Mission-box
+.Cybersecurity-staff-course-summary
+.professor-box
+.professor-name-box
+.professor-experience-box
+.cybersecurity-img2
+.Course-summary-box
+.course-info-agreement-career-options
+.following-careers
+.completion-careers
+.career-possible-ul
+.cybersecurity-img3
+.general-course-info-box
+.details-agreement-box
+
+
+/* Nav-List */
+#Cybersecurity-nav-box li {
+  padding: 20px;
+  display: inline;
+}
+
+/* Main section CSS maybe perhaps not*/
+
+/* H1 and Mission for Cybersecurity */
+.img-h1-mission-statement-box {
+  align-items: center;
+  text-align: center;
+  background: #919191; /* background replacement until image input */
+}
+
+.Cybersecurity-h1-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-black);
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.Cybersecurity-h1-box h1 {
+  text-align: center;
+  color: var(--accent-yellow);
+  margin: 0;
+  font-family: var(--font-heading-primary);
+}
+
+.Cybersecurity-Mission-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.Cybersecurity-Mission-box h2{
+  color: black;
+  font-size: var(--font-size-h2);
+  margin: 0 auto;
+  font-family: var(--font-heading-primary);
+  text-align: center;
+}
+
+.Cybersecurity-Mission-box p{
+  color: var(--neutral-black);
+  margin: 0 auto;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+.Cybersecurity-staff-course-summary {
+  display: flex;
+}
+
+.professor-box {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-green);
+  padding: 10px;
+  border-radius: 1.8rem;
+}
+
+.professor-name-box h3 {
+  font-size: 2rem;
+  text-wrap: none;
+  color: #F5F5F5;
+}
+
+.professor-experience-box {
+  background: var(--neutral-white);
+  border-radius: 15%;
+  border-radius: 25px;
+  padding: 8px;
+}
+
+.cybersecurity-img2 {
+  align-content: space-between;
+  margin: 11rem 15rem;
+}
+
+.Course-summary-box {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: var(--primary-green);
+  border-radius: 25px;
+
+}
+
+.Course-summary-box h3 {
+  color: #F5F5F5;
+  text-align: center;
+}
