@@ -278,6 +278,8 @@ section {
   background: #919191; /* background replacement until image input */
 }
 
+/* top image needs some work for page */
+
 .cybersecurity-img1 {
   z-index: 0;
   width: 100%;
@@ -290,7 +292,6 @@ section {
   left: 50%;
   transform: translateX(-50%);
   padding: 20px;
-
 }
 
 .cybersecurity-h1-box {
@@ -342,67 +343,145 @@ section {
 
 .cybersecurity-staff-course-summary {
   display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.staff-image-course {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+}
+
+.staff-image-course ul {
+  display: flex;
+}
+
+.staff-image-course li {
+  list-style-type: none;
 }
 
 .professor-box {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-green);
-  padding: 10px;
+  padding: 20px;
   border-radius: 1.875rem;
+  width: 25rem;
+  height: auto;
 }
 
-
-
-
-/*
-.professor-box img {
+.cybersecurity-img2 {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
   border-radius: 50%;
-  width: 12rem;
 }
+
+.cybersecurity-img2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .professor-name-box {}
+
+ container for professor's h3 */
 
 .professor-name-box h3 {
+  margin-top: 15px;
   font-size: 2rem;
   text-wrap: none;
-  color: #F5F5F5;
+  color: var(--neutral-white);
 }
 
 .professor-experience-box {
   background: var(--neutral-white);
+  margin-top: 15px;
   border-radius: 15%;
   border-radius: 1.875rem;
   padding: 8px;
+  list-style-type: disc;
 }
 
-.cybersecurity-img2 {
-  align-content: space-between;
-  width: 50%;
-  height: auto;
+.professor-experience-box ul {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.professor-experience-box ul li {
+  list-style-type: disc;
+}
+
+/* General mid list image css */
+
+.li-image {
+  background-color: #333333;
+  list-style-type: none;
+  padding: 0;
   margin: 0;
-  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.875rem;
+  height: 36rem;
+  width: 25rem;
+}
+
+.cybersecurity-img3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1.875rem;
+}
+
+.li-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* General Course Summary css */
+
+.li-course-summary {
+  max-width: 20rem;
+  background-color: var(--primary-green);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  padding: 10px;
+  height: 36rem;
+  width: 150rem;
+  border: 1px solid red;
+  border-radius: 1.875rem;
 }
 
 .course-summary-box {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem;
-  background-color: var(--primary-green);
-  border-radius: 1.875rem;
-
 }
 
 .course-summary-box h3 {
-  color: #F5F5F5;
-  text-align: center;
-} */
+  color: var(--neutral-white);
+  justify-content: center;
+  align-items: center;
+}
+
+.course-summary-box p {
+  
+  color: var(--neutral-white);
+}
 
 /* Image sizing */
 
-.cybersecurity-img4 img {
-  width: 72rem;
-  height: auto;
-}
-
 .certifications-box img{
-  width: 10rem;
+  width: 15rem;
 }
