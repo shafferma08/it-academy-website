@@ -588,19 +588,30 @@ section {
   margin-top: 1.5rem;
 }
 
-.last-section {
+.cybersecurity-img5 {
+  margin-top: -1.5rem;
+  width: 100%;
+  height: 55.375rem;
+}
+
+.cybersecurity-img5 img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-last {
   background-color: #7c7c7c;
 }
 
-.course-description {
+.A-course-description {
   background-color: #333333;
 }
 
-.course-description h3 {
+.A-course-description h3 {
   color: var(--neutral-white);
   text-align: center;
 }
 
-.course-description p {
-  
+.A-course-description p {
+  color: var(--neutral-white);
 }
