@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
     <!-- CSS -->
+    <link rel="stylesheet" href="css/cybersecurity.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -25,139 +26,232 @@
     <header>
         <nav>
             <!-- navigation placehold -->
-             <ul>
+             <ul class="cybersecurity-nav-box">
                 <li><a href="index.html">Home</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="csit.html">CSIT</a></li>
                 <li><a href="cybersecurity.html">Cybersecurity</a></li>
-                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="network-support.html">Network Support</a></li>
-                <!-- <li><a href=""></a>Web Development</li> -->
+                <!-- <li><a href="webdevelopment.html">Web Development</a></li> -->
              </ul>
         </nav>
     </header>
 
     <!-- Main Content -->
-    <main class="container">
+    <main class="containerCyber">
         <section>
             <!-- Page Head and Mission statement -->
-            <section class="Cybersecurity-h1-background">
-                <img src="" alt="">
-                <h1>Cybersecurity</h1>
+            <section class="image-h1-mission-statement-box">
+                <div>
+                    <img class="cybersecurity-img1" src="Media/cs_image_1.jpg" alt="">
+                </div>
+                <div class="h1-summary-container">
+                    <div class="cybersecurity-h1-box">
+                        <h1>Cybersecurity</h1>
+                    </div>
+                    <div class="cybersecurity-mission-box">
+                        <h2>Mission</h2>
+                        <p>
+                            This program provides comprehensive <br>training in cloud computing, network, and <br>
+                            information security to prepare students for <br>careers in the cybersecurity industry.
+                        </p>
+                    </div>
+                </div>
             </section>
-            <section class="Cybersecurity-Mission-background">
-                <h2>Mission</h2>
-                <p>
-                    This program provides comprehensive training in cloud computing, network, and
-                    information security to prepare students for careers in the cybersecurity industry.
-                </p>
-            </section>
+
             <!-- General Course Summary & Professor -->
-            <section class="Cybersecurity-Faculty-Course-Summary">
-                <section>
-                    <h3>John Adams</h3>
-                    <p>Experience and certifications</p>
-                </section>
-                <section>
-                    <img src="" alt="">
-                </section>
-                <section>
-                    <h3>General Course Summary</h3>
-                    <p>
-                        Pinellas Technical College's Applied Cybersecurity program (program Y100300)
-                        is designed to give students the tools of knowledge they need in order to
-                        successfully embark on cybersecurity-related careers and fields. In this program,
-                        faculty experienced in the industry will give students knowledge and skills that
-                        are both in-depth and based on the real world while also allowing students to earn
-                        up to four <a href="#">cybersecurity-related certifications</a>
-                    </p>
-                </section>
-            </section>
-            <!-- General Course Info, Agreement, and possible careers (+image) -->
-            <section class="Course-Info-Agreement-Career-Options">
-                <h3 class="Completion-Careers">Completion of this course opens up the following careers for you:</h3>
-                <ul class="Career-Possible-Ul">
-                    <li>Security Administrator</li>
-                    <li>Cloud Engineer</li>
-                    <li>Computer Defense Technician</li>
-                    <li>Policy & Risk Management Specialist</li>
-                </ul>
-                <img src="" alt="">
-                <section>
-                    <h3>General Course Information</h3>
-                    <ul>
-                        <li>Total length 750 hours</li>
-                        <li>Total cost: $3,291.75</li>
-                        <ul>Recommended experience
-                            <li>successful completion of Computer Systems and Information Technology program</li>
-                            <li>CompTIA A+ certificate</li>
-                            <li>any related industry certification(s)</li>
-                            <li>or any experience/strong familiarity with computer systems & technology</li>
-                        </ul>
-                        <li>Minimum satisfactory academic progress requirement: <strong>70%</strong></li>
-                        <li>Minimum attendance requirement <strong>70%</strong></li>
+
+            <section class="cybersecurity-staff-course-summary">
+                <div class="staff-container-summary">
+                    <ul class="staff-image-course">
+                        <li class="li-professor">
+                            <div class="professor-box">
+                                <div class="cybersecurity-img2">
+                                    <img src="Media/john-adams.png" alt="Image of the professor">
+                                </div>
+                                <div class="professor-name-box">
+                                    <h3>John Adams</h3>
+                                </div>
+                                <div class="professor-experience-box">
+                                    <ul>
+                                        <li>
+                                            Experience: 26+ years in cybersecurity woth the DoD and U.S. Air Force
+                                        </li>
+                                        <li>
+                                            Education: B.S. in Cybersecurity from the University of Maryland
+                                        </li>
+                                        <li>
+                                            Expertise: Cyber warfare, risk management and network security
+                                        </li>
+                                        <li>
+                                            Instructor Role: Brings real-world expertise to the classroom,
+                                            providing hands-on training and industry insights for future cybersecurity progressionals
+                                        </li>
+                                    </ul>  
+                                </div>
+                            </div>
+                        </li>
+                        <li class="li-image">
+                            <div class="cybersecurity-img3">
+                                <img src="Media/cs_image_4.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="li-course-summary">
+                            <div class="course-summary-box">
+                                <h3>General Course Summary</h3>
+                                <p>
+                                    Pinellas Technical College's Applied Cybersecurity program (program Y100300)
+                                    is designed to give students the tools of knowledge they need in order to
+                                    successfully embark on cybersecurity-related careers and fields. In this program,
+                                    faculty experienced in the industry will give students knowledge and skills that
+                                    are both in-depth and based on the real world while also allowing students to earn
+                                    up to four <a href="#">cybersecurity-related certifications</a>
+                                </p>
+                                <p>
+                                    Students will learn how to install, upgrade, secure, and optimize operating systems,
+                                    network equipment, and system software, identify system vulnerabilities and the causes
+                                    of network intrusion; enact organizational prepardness capabilities against cyberattacks;
+                                    and defned enterprises' networks against threats.
+                                </p>
+                            </div>
+                        </li>
                     </ul>
-                </section>
-                <section>
-                    <h3>Articulation Agreement</h3>
-                    <p>St. Petersburg College Cybersecurity A.S. Degree: up to 9 credits</p>
-                    <br>
-                    <strong>Career Details</strong>
-                    <p>Cybersecurity Specialist average salary: $48.41 per hour.
-                    <br>($100,692 per yr)
-                    </p>
-                </section>
+                </div>
             </section>
+            
+            <!-- General Course Info, Agreement, and possible careers (+image) -->
+
+            <section class="course-general-agreement-options">
+                <div class="course-info-container">
+                    <div class="general-course-agreement-box">
+                        <div class="general-course-info-box">
+                            <h3>General Course Information</h3>
+                            <ul class="general-course-ul">
+                                <li>Total length <strong>750 hours</strong></li>
+                                <li>Total cost: <strong>$3,291.75</strong></li>
+                                <li>Recommended experience
+                                    <ul>
+                                        <li>successful completion of Computer Systems and Information Technology program</li>
+                                        <li>CompTIA A+ certificate</li>
+                                        <li>any related industry certification(s)</li>
+                                        <li>or any experience/strong familiarity with computer systems & technology</li>
+                                    </ul>
+                                <li>Minimum satisfactory academic progress requirement: <strong>70%</strong></li>
+                                <li>Minimum attendance requirement <strong>70%</strong></li>
+                            </ul>
+                        </div>
+                        <div class="details-agreement-box">
+                            <h3>Articulation Agreement</h3>
+                            <p>St. Petersburg College Cybersecurity A.S. Degree: up to 9 credits</p>
+                            <br>
+                            <p><strong>Career Details</strong><br>
+                            Cybersecurity Specialist average salary: $48.41 per hour.
+                            <br>($100,692 per yr)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="career-possibilities-n-img">
+                        <div class="career-possibilities">
+                            <h3 class="completion-careers">Completion of this course opens up the following careers for you:</h3>
+                            <ul class="career-possible-ul">
+                                <li>Security Administrator</li>
+                                <li>Cloud Engineer</li>
+                                <li>Computer Defense Technician</li>
+                                <li>Policy & Risk Management Specialist</li>
+                            </ul>
+                        </div>
+                        <div class="cybersecurity-img4">
+                            <img src="Media/cs_image_5.jpg" alt="A class of Cybersecurity Students">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
             <!-- Certifications -->
-            <section class="Cybersecurity-certification-section">
-                <section>
+            
+            <section class="cybersecurity-certification-section">
+                <!-- make CompTIA class/MS Cert class, adjust the divs of certification boxes -->
+                <div class="certifications--h3-box">
                     <h3>Certifications</h3>
-                </section>
-                <section class class="certifications-box">
-                    <img src="" alt="">
-                    <h5>Title</h5>
-                </section>
-                <section class="certifications-box">
-                    <img src="" alt="">
-                    <h5>Title</h5>
-                </section>
-                <section class="certifications-box">
-                    <img src="" alt="">
-                    <h5>Title</h5>
-                </section>
-                <section class="certifications-box">
-                    <img src="" alt="">
-                    <h5>Title</h5>
-                </section>
+                </div>
+                <div class="certifications-container">
+                    <div class="certifications-box">
+                        <div class="Inner-certification-box">
+                            <img src="Media/cert_badge_comptia_securityplus.png" alt="">
+                            <h5>CompTIA Security+</h5>
+                        </div>
+                    </div>
+                    <div class="certifications-box">
+                        <div class="Inner-certification-box">
+                            <img src="Media/cert_badge_comptia_cysaplus.png" alt="">
+                            <h5>CompTIA Cybersecurity <br> Analyst (CySA+)</h5>
+                        </div>
+                    </div>
+                    
+                    <div class="certifications-box">
+                        <div class="Inner-certification-box">
+                            <img src="Media/cert_badge_az900.png" alt="">
+                            <h5>Microsoft Azure fundamentals <br> (AZ-900)</h5>
+                        </div>
+                    </div>
+                    <div class="certifications-box">
+                        <div class="Inner-certification-box">
+                            <img src="Media/cert_badge_sc900.png" alt="">
+                            <h5>MS Security, Complience, and ID Fundamentals <br> (SC-800)</h5>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <img src="" alt="">
-            <section>
-                <h3>Program Y100300</h3>
-                <p>
-                    <strong>Cybersecurity Associate - Course CT50018 <br>(600 Hours)</strong><br>
-                    This course provides lecture, demonstration, and hands-on practice in IT fundamentals,
-                    including operating systems and PC components, networking fundamentals, including common
-                    networking models, communication protocols, cloud computing, risk management, and policy creation.
-                    Additionally, this course provides security fundamentals, including hacker culture, attack types,
-                    security vulnerabilities, malware, encryption, and defense strategies. Both CompTIA Security+ and
-                    pertinent Microsoft certification exam objectives will be covered in this course.
-                    <br>
-                    <strong>Information Security Manager - Course CTS0019 <br>(150 Hours)</strong><br>
-                    Includes cybersecurity risk mitigation planning; establishing a risk management framework; creating
-                    a corporate security policy; addressing process risks, contingency planning, and the essential
-                    elements of disaster recovery.
-                </p>
-            </section>
-            <section>
-                <h3>Student Testimonials</h3>
-                <ul>
-                    <li>“My resume is enriched with the certifications … my knowledge about cybersecurity
-                        is very good” - Carlos Garzon</li>
-                    <li>“... well worth the time and money” - Noah Hieatt</li>
-                    <li>“Helped deepen my understanding of cybersecurity” - Anonymous</li>
-                    <li>“... set me up for success by giving me practical skills,
-                        industry-recognized certifications, and a deep understanding of cybersecurity”
-                        - Anonymous</li>
-                </ul>
+            <!-- The Program -->
+            
+            <div class="cybersecurity-img5">
+                <img src="Media/cs_image_2.jpg" alt="">
+            </div>
+            <section class="section-last">
+                <div class="program-container-description-testimonial">
+                    <div class="A-course-description">
+                        <div>    
+                            <h3>Program Y100300</h3>
+                        </div>
+                        <div>
+                            <p>
+                                <strong>Cybersecurity Associate - Course CT50018 <br>(600 Hours)</strong><br>
+                                This course provides lecture, demonstration, and hands-on practice in IT fundamentals,
+                                including operating systems and PC components, networking fundamentals, including common
+                                networking models, communication protocols, cloud computing, risk management, and policy creation.
+                                Additionally, this course provides security fundamentals, including hacker culture, attack types,
+                                security vulnerabilities, malware, encryption, and defense strategies. Both CompTIA Security+ and
+                                pertinent Microsoft certification exam objectives will be covered in this course.
+                                <br>
+                                <strong>Information Security Manager - Course CTS0019 <br>(150 Hours)</strong><br>
+                                Includes cybersecurity risk mitigation planning; establishing a risk management framework; creating
+                                a corporate security policy; addressing process risks, contingency planning, and the essential
+                                elements of disaster recovery.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="B-student-testimonials">
+                        <div>
+                            <h3>Student Testimonials</h3>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    “My resume is enriched with the certifications … my knowledge about cybersecurity is very good” - Carlos Garzon
+                                </li>
+                                <li>
+                                    “... well worth the time and money” - Noah Hieatt
+                                </li>
+                                <li>
+                                    “Helped deepen my understanding of cybersecurity” - Anonymous
+                                </li>
+                                <li>
+                                    “... set me up for success by giving me practical skills, industry-recognized certifications, and a deep understanding of cybersecurity” - Anonymous
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </section>
         </section>
     </main>
@@ -173,6 +267,6 @@
     </footer>
 
     <!-- JavaScript -->
-     <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

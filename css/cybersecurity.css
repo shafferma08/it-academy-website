@@ -1,0 +1,618 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Design System: Variables */
+:root {
+  /* Colors */
+  --primary-green: #008142;
+  --accent-yellow: #FFCF01;
+  --neutral-black: #333333;
+  --neutral-white: #F5F5F5;
+  --neutral-gray: #CCCCCC;
+  --alert-red: #FF6F61;
+
+  /* Typography */
+  --font-heading-primary: 'droid-serif', serif;
+  --font-heading-secondary: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-accent: 'Montserrat', sans-serif;
+
+  /* Font Sizes */
+  --font-size-h1: 3rem; /* 48px */
+  --font-size-h2: 2.25rem; /* 36px */
+  --font-size-h3: 1.75rem; /* 28px */
+  --font-size-body: 1rem; /* 16px */
+
+  /* Line Height */
+  --line-height-body: 1.5;
+  --line-height-heading: 1.2;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Border Radius */
+  --border-radius: 5px;
+}
+
+/* Body Spacing */
+html, body {
+  font-family: var(--font-body);
+  line-height: var(--line-height-body);
+  background-color: var(--neutral-white);
+  color: var(--neutral-black);
+  font-size: var(--font-size-body);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Headings */
+h1 {
+  font-family: var(--font-heading-primary);
+  font-size: var(--font-size-h1);
+  line-height: var(--line-height-heading);
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-md);
+}
+
+h2 {
+  font-family: var(--font-heading-secondary);
+  font-size: var(--font-size-h2);
+  line-height: var(--line-height-heading);
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-md);
+}
+
+h3 {
+  font-family: var(--font-heading-secondary);
+  font-size: var(--font-size-h3);
+  line-height: var(--line-height-heading);
+  color: var(--primary-green);
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Paragraphs */
+p {
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Lists */
+ul, ol {
+  margin: var(--spacing-md) 0;
+  padding-left: var(--spacing-lg);
+}
+
+/* Buttons */
+button {
+  font-family: var(--font-accent);
+  padding: var(--spacing-sm) var(--spacing-md);
+  margin: var(--spacing-sm);
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+}
+
+/* Primary Button */
+button.primary {
+  background-color: var(--primary-green);
+  color: var(--neutral-white);
+  font-weight: bold;
+}
+button.primary:hover {
+  background-color: var(--neutral-black);
+}
+
+/* Secondary Button */
+button.secondary {
+  background-color: transparent;
+  color: var(--primary-green);
+  border: 2px solid var(--primary-green);
+}
+button.secondary:hover {
+  background-color: var(--primary-green);
+  color: var(--neutral-white);
+}
+
+/* Header */
+header {
+  background-color: var(--primary-green);
+  color: var(--neutral-white);
+  padding: var(--spacing-md);
+}
+
+header .logo {
+  width: 150px;
+}
+
+header .nav-links {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+header .nav-links a {
+  color: var(--neutral-white);
+  text-decoration: none;
+  font-family: var(--font-accent);
+}
+
+/* Main */
+main {
+  flex: 1;
+}
+
+/* Footer */
+footer {
+  background-color: var(--neutral-black);
+  color: var(--neutral-white);
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+footer .social-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+footer .social-links a {
+  color: var(--accent-yellow);
+  text-decoration: none;
+  font-family: var(--font-accent);
+}
+
+/* Sections */
+section {
+  margin-bottom: var(--spacing-lg);
+}
+
+/* Grid System */
+.container {
+  width: 90%; /* Flexible width */
+  max-width: 1200px; /* Prevents overly large containers */
+  margin: 0 auto;
+  padding: var(--spacing-md);
+}
+
+/* Media Queries */
+@media (max-width: 1199px) {
+  html {
+    font-size: 14px; /* Adjust root font size for tablets */
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    font-size: 12px; /* Adjust root font size for mobile */
+  }
+  header .nav-links {
+    flex-direction: column;
+  }
+}
+
+/* Cybersecurity section CSS */
+/* 
+
+.cybersecurity-certification-section
+
+.certifications--h3-box
+
+.certifications-box
+
+.cybersecurity-img4
+
+.programy100300
+
+.student-testimonials
+
+*/
+/* Nav-List */
+.cybersecurity-nav-box {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.cybersecurity-nav-box li {
+  padding: 10px;
+  display: flex;
+  margin: 0 0.5rem;
+  justify-content: center;
+}
+
+/* Main section CSS maybe perhaps not*/
+
+/* H1 and Mission for Cybersecurity */
+.img-h1-mission-statement-box {
+  position: relative;
+  align-items: center;
+  text-align: center;
+  background: #919191; /* background replacement until image input */
+}
+
+/* top image needs some work for page */
+
+.cybersecurity-img1 {
+  z-index: 0;
+  width: 100%;
+}
+
+.h1-summary-container {
+  z-index: 1;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+}
+
+.cybersecurity-h1-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neutral-black);
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.cybersecurity-h1-box h1 {
+  text-align: center;
+  color: var(--accent-yellow);
+  margin: 0;
+  font-family: var(--font-heading-primary);
+}
+
+.cybersecurity-mission-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 15px 0 15px 0;
+  background-color: var(--neutral-white);
+}
+
+.cybersecurity-mission-box h2{
+  color: black;
+  font-size: var(--font-size-h2);
+  margin: 0 auto;
+  font-family: var(--font-heading-primary);
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.cybersecurity-mission-box p{
+  color: var(--neutral-black);
+  margin: 0 auto;
+  text-wrap: wrap;
+  text-align: center;
+}
+
+/* Staff & Course Summary (with image) */
+
+.cybersecurity-staff-course-summary {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.staff-image-course {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.staff-image-course ul {
+  display: flex;
+}
+
+.staff-image-course li {
+  list-style-type: none;
+}
+
+.professor-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary-green);
+  padding: 20px;
+  border-radius: 1.875rem;
+  width: 25rem;
+  height: auto;
+}
+
+.cybersecurity-img2 {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.cybersecurity-img2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* .professor-name-box {}
+
+ container for professor's h3 */
+
+.professor-name-box h3 {
+  margin-top: 15px;
+  font-size: 2rem;
+  text-wrap: none;
+  color: var(--neutral-white);
+}
+
+.professor-experience-box {
+  background: var(--neutral-white);
+  margin-top: 15px;
+  border-radius: 15%;
+  border-radius: 1.875rem;
+  padding: 8px;
+  list-style-type: disc;
+}
+
+.professor-experience-box ul {
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.professor-experience-box ul li {
+  list-style-type: disc;
+}
+
+/* General mid list image css */
+
+.li-image {
+  background-color: #333333;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.875rem;
+  width: 25rem;
+  height: 36.125rem;
+}
+
+.cybersecurity-img3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1.875rem;
+}
+
+.li-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* General Course Summary css */
+
+.li-course-summary {
+  background-color: var(--primary-green);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 36.125rem;
+  width: 25rem;
+  border-radius: 1.875rem;
+}
+
+ .course-summary-box {
+  padding: 10px;
+}
+
+.course-summary-box h3 {
+  color: var(--neutral-white);
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size-h3);
+  margin-bottom: 20px;
+}
+
+.course-summary-box p {
+  color: var(--neutral-white);
+  padding: 0 10px 15px;
+  margin: 0;
+}
+
+/* Image sizing */
+
+.cybersecurity-img5 img {
+  width: 90rem;
+  height: 55rem;
+}
+
+.certifications-box img{
+  width: 15rem;
+}
+
+/* Career Completion section */
+
+.course-general-agreement-options {
+  background-color: var(--neutral-gray);
+  padding: 2rem 3rem;
+  margin: 0;
+  height: 800px;
+}
+
+.course-info-container {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.general-course-agreement-box {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.general-course-info-box {
+  background-color: var(--neutral-white);
+  border-radius: 1.875rem;
+  padding: 10px;
+}
+
+.general-course-info-box h3 {
+  color: var(--neutral-black);
+  text-align: center;
+  font-size: var(--font-heading-[--font-heading-primary]);
+}
+
+.general-course-info-box ul {
+  padding: 10px;
+  list-style-position: inside;
+  color: var(--neutral-black);
+}
+
+.general-course-info-box ul li ul li {
+  padding-left: 25px;
+}
+
+.general-course-info-box ul li ul {
+  list-style-position: inside;
+}
+
+.details-agreement-box {
+  background-color: var(--neutral-black);
+  border-radius: 1.875rem;
+  padding: 10px;
+}
+
+.details-agreement-box h3 {
+  color: var(--accent-yellow);
+  text-align: center;
+  padding: 5px;
+}
+
+
+.details-agreement-box p {
+  color: var(--neutral-white);
+  text-align: center;
+  padding:0 10px;
+}
+
+.cybersecurity-img4 {
+  width: 100%;
+  height: 41%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 1.875rem;
+}
+
+.cybersecurity-img4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Certification Boxes */
+
+.cybersecurity-certification-section {
+  background-color: var(--accent-yellow);
+  height: 45rem;
+}
+
+.certifications--h3-box {
+  background-color: var(--primary-green);
+  height: 5rem;
+  margin: 0 0 2rem 0;
+  padding-top: 10px;
+}
+
+.certifications--h3-box h3 {
+  color: var(--neutral-white);
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  font-size: var(--font-size-h1);
+}
+
+.certifications-container {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-content: center;
+}
+
+.certifications-box {
+  background-color: var(--primary-green);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 1.875rem;
+  height: 35rem;
+  width: 20rem;
+}
+
+.Inner-certification-box {
+  padding: 3rem 20px 0 20px;
+}
+
+.Inner-certification-box h5{
+  color: var(--neutral-white);
+  font-size: var(--font-size-h3);
+  text-align: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.cybersecurity-img5 {
+  margin-top: -1.5rem;
+  width: 100%;
+  height: 55.375rem;
+}
+
+.cybersecurity-img5 img {
+  width: 100%;
+  height: 100%;
+}
+
+.section-last {
+  background-color: #7c7c7c;
+}
+
+.A-course-description {
+  background-color: #333333;
+}
+
+.A-course-description h3 {
+  color: var(--neutral-white);
+  text-align: center;
+}
+
+.A-course-description p {
+  color: var(--neutral-white);
+}
