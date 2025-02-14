@@ -40,6 +40,10 @@
   
     /* Border Radius */
     --border-radius: 5px;
+    --border-radius-2: 10px;
+    --border-radius-3: 15px;
+    --border-radius-4: 20px;
+    
   }
 
   /* Body Spacing */
