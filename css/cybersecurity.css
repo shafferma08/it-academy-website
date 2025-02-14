@@ -585,6 +585,7 @@ section {
   color: var(--neutral-white);
   font-size: var(--font-size-h3);
   text-align: center;
+  align-items: center;
   margin-top: 1.5rem;
 }
 
