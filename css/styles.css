@@ -129,7 +129,19 @@ html, body {
   }
   
   header .logo {
-    width: 150px;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+  }
+
+  header h1 {
+    color: var(--neutral-white);
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
   
   header .nav-links {
@@ -171,7 +183,7 @@ html, body {
   }
 
   /* Sections */
-section {
+  section {
     margin-bottom: var(--spacing-lg);
   }
   
