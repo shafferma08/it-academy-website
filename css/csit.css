@@ -1,32 +1,17 @@
 .background-container {
-  height: 500px;
+  height: 350px;
   width: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url('../CSIT_photos/motherboardbanner.jpg');
-  position: relative;
+  background-image: url('../CSIT_photos/resized_MB.png');
+
+
 }
 
-.container {
-    position: absolute;
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Adjust for exact centering */
-    background-color: var(--primary-green);
-    border-radius: var(--border-radius-4);
+.img-con img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
 
-.container h1 {
-  font-family: var(--font-heading-primary);
-  color: var(--neutral-white);
-  text-align: center;
-  font-weight: 900;
-}
-
-.container h3 {
-    font-family: var();
-    color: var(--accent-yellow);
-    text-align: center;
-    font-size: var(--font-size-body);
-}
