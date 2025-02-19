@@ -14,6 +14,8 @@
 .student-testimonials
 
 */
+
+
 /* Nav-List */
 .cybersecurity-nav-box {
   display: flex;
@@ -31,7 +33,7 @@
 /* Main section CSS maybe perhaps not*/
 
 /* H1 and Mission for Cybersecurity */
-.img-h1-mission-statement-box {
+.image-h1-mission-statement-box {
   position: relative;
   align-items: center;
   text-align: center;
@@ -43,15 +45,19 @@
 .cybersecurity-img1 {
   z-index: 0;
   width: 100%;
+  max-height: 900px;
+  overflow: hidden;
 }
 
 .h1-summary-container {
   z-index: 1;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 50%;
   transform: translateX(-50%);
-  padding: 20px;
+  padding: 3rem;
+  width: 90%;
+  max-width: 600px;
 }
 
 .cybersecurity-h1-box {
@@ -66,6 +72,7 @@
 
 .cybersecurity-h1-box h1 {
   text-align: center;
+  font-size: 3rem;
   color: var(--accent-yellow);
   margin: 0;
   font-family: var(--font-heading-primary);
@@ -97,6 +104,10 @@
   margin: 0 auto;
   text-wrap: wrap;
   text-align: center;
+}
+
+@media screen {
+  
 }
 
 /* Staff & Course Summary (with image) */
@@ -178,6 +189,8 @@
 
 .professor-experience-box ul li {
   list-style-type: disc;
+  font-size: 1rem;
+  font-weight: 500;
 }
 
 /* General mid list image css */
@@ -241,6 +254,7 @@
   color: var(--neutral-white);
   padding: 0 10px 15px;
   margin: 0;
+  font-size: 1rem;
 }
 
 /* Image sizing */
@@ -267,6 +281,7 @@
   display: flex;
   flex-direction: row;
   gap: 3rem;
+  height: 750px;
 }
 
 .general-course-agreement-box {
@@ -322,7 +337,7 @@
 
 .cybersecurity-img4 {
   width: 100%;
-  height: 41%;
+  height: 63%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -336,58 +351,82 @@
   object-fit: cover;
 }
 
+
 /* Certification Boxes */
 
 .cybersecurity-certification-section {
-  background-color: var(--accent-yellow);
-  height: 45rem;
+  background-color: #FFCF01;
+  width: 100%;
 }
 
 .certifications--h3-box {
-  background-color: var(--primary-green);
-  height: 5rem;
-  margin: 0 0 2rem 0;
-  padding-top: 10px;
+  background-color: #008142;
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 120rem;
 }
 
 .certifications--h3-box h3 {
-  color: var(--neutral-white);
-  text-align: center;
-  align-self: center;
-  justify-self: center;
-  font-size: var(--font-size-h1);
+  color: #F5F5F5;
+  font-size: 4rem;
 }
 
 .certifications-container {
   display: flex;
-  flex-direction: row;
-  gap: 2rem;
+  flex-wrap: wrap;
   justify-content: center;
-  align-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+
+}
+
+.certifications-container, .two-certs {
+  gap: 6rem;
+}
+
+.two-certs, .certifications-box {
+  display: flex;
+}
+
+.two-certs {
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .certifications-box {
-  background-color: var(--primary-green);
-  display: flex;
+  background-color: #008142;
+  border-radius: 15px;
+  height: 500px;
+  width: 350px;
   flex-direction: column;
-  text-align: center;
-  border-radius: 1.875rem;
-  height: 35rem;
-  width: 20rem;
-}
-
-.Inner-certification-box {
-  padding: 3rem 20px 0 20px;
-}
-
-.Inner-certification-box h5{
-  color: var(--neutral-white);
-  font-size: var(--font-size-h3);
-  text-align: center;
   align-items: center;
-  margin-top: 1.5rem;
+  padding: 10px;
 }
 
+.cert-img {
+  height: 250px;
+  width: 250px;
+  margin-bottom: 10px;
+}
+
+.cert-text-contain {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.cert-text {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Last Section */
 .cybersecurity-img5 {
   margin-top: -1.5rem;
   width: 100%;
