@@ -1,3 +1,47 @@
+@import url('styles.css');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Design System: Variables */
+:root {
+  /* Colors */
+  --primary-green: #008142;
+  --accent-yellow: #FFCF01;
+  --neutral-black: #333333;
+  --neutral-white: #F5F5F5;
+  --neutral-gray: #CCCCCC;
+  --alert-red: #FF6F61;
+
+  /* Typography */
+  --font-heading-primary: 'droid-serif', serif;
+  --font-heading-secondary: 'Poppins', sans-serif;
+  --font-body: 'Open Sans', sans-serif;
+  --font-accent: 'Montserrat', sans-serif;
+
+  /* Font Sizes */
+  --font-size-h1: 3rem; /* 48px */
+  --font-size-h2: 2.25rem; /* 36px */
+  --font-size-h3: 1.75rem; /* 28px */
+  --font-size-body: 1rem; /* 16px */
+
+  /* Line Height */
+  --line-height-body: 1.5;
+  --line-height-heading: 1.2;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Border Radius */
+  --border-radius: 5px;
+}
 /* Cybersecurity section CSS */
 /* 
 
@@ -440,17 +484,75 @@
 
 .section-last {
   background-color: #7c7c7c;
+  margin: 0;
+  padding: 1rem 1rem 2rem;
+}
+
+.program-container-description-testimonial {
+  display: flex;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
 }
 
 .A-course-description {
   background-color: #333333;
+  border-radius: 1.5rem;
+  width: 50%;
+  padding: 1.5rem;
 }
 
 .A-course-description h3 {
   color: var(--neutral-white);
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .A-course-description p {
   color: var(--neutral-white);
+}
+
+.A-course-description p strong {
+  color: var(--accent-yellow);
+}
+
+.B-student-testimonials {
+  width: 50%;
+  background-color: #008142;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  gap: 2rem;
+}
+
+.B-student-testimonials div h3 {
+  color: white;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.B-student-testimonials div ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 2rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.B-student-testimonials div ul li {
+  background-color: #00bf63c7;
+  display: flex;
+  padding: 1rem 4rem;
+  border-radius: 2.5rem;
+  color: black;
+}
+
+.B-student-testimonials div ul li p {
+  margin: 0;
+  font-family: var(--font-heading-secondary);
+}
+
+.B-student-testimonials div ul li p span {
+  font-weight: bold;
 }
