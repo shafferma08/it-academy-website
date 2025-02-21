@@ -356,7 +356,6 @@
   background-color: var(--neutral-black);
   border-radius: 1.875rem;
   padding: 10px 0.625rem -1.2rem 0.625rem;
-  height: 16rem;
 }
 
 .details-agreement-box h3 {
@@ -603,10 +602,27 @@
 
   */
 
-
 /* Mobile (Small screens) */
 @media screen and (max-width: 767px) {
   /* Mobile styles */
+  .h1-summary-container {
+    z-index: 1;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3rem;
+    width: 90%;
+  }
+
+  .staff-image-course {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
 }
 
 /* Tablet (Medium screens) */
