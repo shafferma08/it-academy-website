@@ -593,7 +593,6 @@
 
 /* 
     fixes to do when media queriying, fix articulation exiting the section on size morph
-    also, match bot divs in that sectin to scale equally instead of inequally
 */
 
 /* 
@@ -605,35 +604,17 @@
   */
 
 
-/* Default Breakpoint: Mobile */
-@media screen and (max-width: 375px) {
-  
+/* Mobile (Small screens) */
+@media screen and (max-width: 767px) {
+  /* Mobile styles */
 }
 
-@media (min-width: 375px) {
-
+/* Tablet (Medium screens) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  /* Tablet styles */
 }
 
-@media screen and (min-width: 480px) {
-  
-}
-
-/* Tablet Devices */
-@media screen and (min-width: 768px) {
-
-}
-
-/* Desktop Devices */
-@media screen and (min-width: 1024px) {
-
-}
-
-/* Larger Screen (Desktop, Full HD) */
-@media (max-width: 1440px) {
-
-}
-
-/* Large screens and above */
-@media (min-width: 1440px) {
-  
+/* Large screens (if any additional adjustments are needed) */
+@media screen and (min-width: 1440px) {
+  /* Styles for extra-large screens, if necessary */
 }
