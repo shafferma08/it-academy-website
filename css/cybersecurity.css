@@ -514,10 +514,25 @@
 
 .A-course-description p {
   color: var(--neutral-white);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 0;
 }
 
 .A-course-description p strong {
   color: var(--accent-yellow);
+}
+
+.A-course-description p strong .p2{
+  color: var(--accent-yellow);
+  margin: 0;
+  font-weight: bold;
+}
+
+.br-student-testimonials {
+  display: block;
+  margin: 1rem 0;
 }
 
 .B-student-testimonials {
