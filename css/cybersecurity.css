@@ -269,15 +269,17 @@
 }
 
  .course-summary-box {
-  padding: 10px;
+  padding: .625rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .course-summary-box h3 {
   color: var(--neutral-white);
-  justify-content: center;
+  justify-self: center;
   align-items: center;
   font-size: var(--font-size-h3);
-  margin-bottom: 20px;
+  margin-bottom: 1.5rem;
 }
 
 .course-summary-box p {
@@ -305,13 +307,13 @@
   padding: 2rem 3rem;
   margin: 0;
   height: 800px;
+  background-color: #7c7c7c;
 }
 
 .course-info-container {
   display: flex;
-  flex-direction: row;
   gap: 4rem;
-  height: 736px;
+  /* height: 736px; */
   justify-content: center;
 }
 
@@ -320,24 +322,26 @@
   flex-direction: column;
   gap: 3rem;
   width: 720px;
+  justify-content: space-between; /* space between */
 }
 
 .general-course-info-box {
   background-color: var(--neutral-white);
   border-radius: 1.875rem;
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .general-course-info-box h3 {
   color: var(--neutral-black);
   text-align: center;
-  font-size: var(--font-heading-[--font-heading-primary]);
+  font-size: var(--font-size-h2);
 }
 
 .general-course-info-box ul {
   padding: 10px;
   list-style-position: inside;
   color: var(--neutral-black);
+  font-size: var(--font-size-body);
 }
 
 .general-course-info-box ul li ul li {
@@ -351,7 +355,7 @@
 .details-agreement-box {
   background-color: var(--neutral-black);
   border-radius: 1.875rem;
-  padding: 10px;
+  padding: 10px 0.625rem -1.2rem 0.625rem;
   height: 16rem;
 }
 
@@ -359,8 +363,8 @@
   color: var(--accent-yellow);
   text-align: center;
   padding: 5px;
+  font-size: var(--font-size-h2);
 }
-
 
 .details-agreement-box p {
   color: var(--neutral-white);
@@ -369,17 +373,28 @@
   font-size: 1.2rem;
 }
 
+.line {
+  border-top: 1px solid lightgrey;
+  margin: 0.625rem 0 1.2rem 0;
+}
+
 .career-possibilities-n-img {
   width: 720px;
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  justify-content: space-between; /* space between */
 }
 
 .career-possibilities {
   padding: 0.5rem;
   display: flex;
   flex-direction: column;
+  color: var(--neutral-white) !important;
+}
+
+.completion-careers {
+  color: var(--neutral-white) !important;
 }
 
 .cybersecurity-img4 {
@@ -524,10 +539,9 @@
   color: var(--accent-yellow);
 }
 
-.A-course-description p strong .p2{
+.A-course-description h4 {
   color: var(--accent-yellow);
-  margin: 0;
-  font-weight: bold;
+  margin-bottom: .5rem;
 }
 
 .br-student-testimonials {
