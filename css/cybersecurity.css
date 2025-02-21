@@ -67,7 +67,6 @@
   text-align: center;
   background: #919191; /* background replacement until image input */
   border-top: 5px solid #00522a;
-  max-height: 900px;
 }
 
 /* top image needs some work for page */
@@ -75,7 +74,6 @@
 .cybersecurity-img1 {
   z-index: 0;
   width: 100%;
-  max-height: 900px;
   overflow: hidden;
 }
 
@@ -263,7 +261,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 36.125rem;
   width: 25rem;
   border-radius: 1.875rem;
 }
@@ -293,7 +290,6 @@
 
 .cybersecurity-img5 img {
   width: 90rem;
-  height: 55rem;
 }
 
 .certifications-box img{
@@ -306,14 +302,13 @@
   background-color: var(--neutral-gray);
   padding: 2rem 3rem;
   margin: 0;
-  height: 800px;
+  /* height: 800px; */
   background-color: #7c7c7c;
 }
 
 .course-info-container {
   display: flex;
   gap: 4rem;
-  /* height: 736px; */
   justify-content: center;
 }
 
@@ -399,7 +394,6 @@
 .cybersecurity-img4 {
   display: flex;
   width: 100%;
-  height: 32rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -409,7 +403,6 @@
 
 .cybersecurity-img4 img {
   width: 100%;
-  height: 100%;
   object-fit: cover;
 }
 
@@ -423,7 +416,6 @@
 
 .certifications--h3-box {
   background-color: #008142;
-  height: 8rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -462,7 +454,6 @@
 .certifications-box {
   background-color: #008142;
   border-radius: 15px;
-  height: 500px;
   width: 350px;
   flex-direction: column;
   align-items: center;
@@ -470,7 +461,7 @@
 }
 
 .cert-img {
-  height: 250px;
+  height: auto;
   width: 250px;
   margin-bottom: 10px;
 }
@@ -492,12 +483,10 @@
 .cybersecurity-img5 {
   margin-top: -1.5rem;
   width: 100%;
-  height: 55.375rem;
 }
 
 .cybersecurity-img5 img {
   width: 100%;
-  height: 100%;
 }
 
 .section-last {
@@ -622,7 +611,14 @@
     justify-content: center;
     gap: 3rem;
   }
-  
+
+  .cybersecurity-img1 {
+    display: none;
+  }
+
+  .li-image {
+    display: none;
+  }
 }
 
 /* Tablet (Medium screens) */
