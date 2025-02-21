@@ -598,12 +598,42 @@
 
 /* 
   Breakpoints for the media queries
-  1685px area to fix certs
-  1600px for testimonial stretch fix
-
-
-
+  I can't tell em apart
   By default breakpoints
   375px, 768px, 1440px
 
   */
+
+
+/* Default Breakpoint: Mobile */
+@media screen and (max-width: 375px) {
+  
+}
+
+@media (min-width: 375px) {
+
+}
+
+@media screen and (min-width: 480px) {
+  
+}
+
+/* Tablet Devices */
+@media screen and (min-width: 768px) {
+
+}
+
+/* Desktop Devices */
+@media screen and (min-width: 1024px) {
+
+}
+
+/* Larger Screen (Desktop, Full HD) */
+@media (max-width: 1440px) {
+
+}
+
+/* Large screens and above */
+@media (min-width: 1440px) {
+  
+}
