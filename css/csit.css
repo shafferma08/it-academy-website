@@ -39,18 +39,73 @@
   
 }
 
-/* badge section */
-
-.container h3 {
-  color: var(--accent-yellow);
+/* Badge Section */
+.badge-section section {
+  display: flex;
+  justify-content: space-between; /* Keeps the two containers side by side */
+  gap: 30px; /* Adds space between the containers */
+  flex-wrap: nowrap; /* Ensure they stay side by side and don't wrap */
 }
 
-.duration h3 {
-  color: var(--accent-yellow);
+/* General container styles */
+.container {
+  display: flex;
+ width: 600px;
+ border-radius: 20px;
+ 
+  
 }
 
+/* Green box specific styles */
+.green-box {
+  display: flex; /* Enable flexbox */
+  justify-content: space-between; /* Distribute space between the elements horizontally */
+  align-items: flex-start; /* Aligns items at the top to avoid misalignment */
+  background-color: var(--primary-green); /* Green background */
+  padding-top: 50px;
+
+}
+
+.green-box p {
+  color: var(--neutral-white);
+}
+
+/* Yellow box specific styles */
+.yellow-box {
+  background-color: var(--accent-yellow); /* Apply yellow background */
+  display: flex;
+  text-align: center;
+  gap: 20px;
+  padding: 20px; /* Optional: Adds padding to the yellow box for spacing */
+}
+
+/* Button and image styles */
+.button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  text-align: center;
+}
+
+.button-t h3 {
+  color: var(--neutral-black);
+}
+
+.comptia img {
+  border-radius: 50%;
+  height: 200px;
+}
+
+/* Heading color styles */
+.certification h3,
+.duration h3,
 .type h3 {
   color: var(--accent-yellow);
 }
 
+
+.middle {
+  background-color: var(--neutral-black);
+}
 
