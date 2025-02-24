@@ -93,30 +93,110 @@
 
             <div class="learning">
                 <div class="wyl">
-                   <h2></h2>
+                   <h2>What You'll Learn:</h2>
                 </div>
+
+                <div class="wyl-text">
+                    <h3>
+                        This program prepares the students for the following certifications:
+                    </h3>
+                </div>
+
+                <div class="certications-img">
+
+                    <div class="learn-img">
+                        <img src="CSIT_photos/comptia_A+.png" alt="Comptia A+">
+                    </div>
+
+                    <div class="learn-img">
+                        <img src="CSIT_photos/network+.png" alt="Network+">
+                    </div>
+
+                    <div class="learn-img">
+                        <img src="CSIT_photos/security+.png" alt="Security+">
+                </div>
+
+                </div>
+
+                <button class="accordion">Section 1</button>
+                <div class="panel">
+                <p>Lorem ipsum..</p>
+                </div>
+
+                <button class="accordion">Section 2</button>
+                <div class="panel">
+                <p>Lorem ipsum...</p>
+                </div>
+
+                <button class="accordion">Section 3</button>
+                <div class="panel">
+                <p>Lorem ipsum...</p>
+                </div>
+
+
+                
+                
+
+
 
             </div>
 
 
-            <div class="instuctor">
+
+
+
+
+
+
+
+
+            <div class="instructor">
+                <div class="instructor-text">
+                    <h2>Instructor</h2>
+                </div>
+
+                <div class="green">
+
+                <div class="cotton-pht">
+                    <img src="CSIT_photos/Untitled design.png" alt="Robert Cotton">
+                </div>
+
+                <div class="rob-main-container">
+                    <div class="rob-container">
+                        <h2>Robert Cotton</h2>
+                    </div>
+
+                    <div class="rc2">
+                        <p>
+                            Certified in CompTIA
+                        </p>
+                    </div>
+
+                    <div class="rc3">
+                        <p>Network +</p>
+                    </div>
+
+                    <div class="rc4">
+                        <p>Security +</p>
+                    </div>
+
+                    <div class="rc5">
+                        <p>Server +</p>
+                    </div>
+
+                    <div class="rc6">
+                        <p>26 years combined work and teaching experience</p>
+                    </div>
+
+                    
+                </div>
+
+            </div>
 
             </div>
 
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     </main>
@@ -130,6 +210,26 @@
     </footer>
 
     <!-- JavaScript -->
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+    
+
+   
+        
     <script src="js/script.js"></script>
 </body>
 </html>
