@@ -623,6 +623,24 @@
 /* Tablet (Medium screens) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   /* Tablet styles */
+
+  .cybersecurity-img1 {
+    z-index: 1;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .h1-summary-container {
+    z-index: 1;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3rem;
+    width: 90%;
+    max-width: 600px;
+  }
+
 }
 
 /* Large screens (if any additional adjustments are needed) */
@@ -650,9 +668,8 @@
 
   .cybersecurity-img5 {
     margin-top: -1.5rem;
-    margin-bottom: -1rem;
+    margin-bottom: -.5rem;
     width: 100%;
-    height: 60rem;
   }
 
   .cybersecurity-img4 img {
@@ -703,11 +720,18 @@
 
   /* No Longer Cert stuff */
   .section-last {
+    background-color: #7c7c7c;
+    margin: 0;
     padding: 1rem 1rem 2rem;
+    clear: both;
+    width: 100%;
   }
 
   .program-container-description-testimonial {
-    padding-bottom: 0;
+    display: flex;
+    padding: 2rem 1.5rem;
+    gap: 2rem;
+    justify-content: center;
   }
 
   footer {
