@@ -292,10 +292,6 @@
   width: 90rem;
 }
 
-.certifications-box img{
-  width: 15rem;
-}
-
 /* Career Completion section */
 
 .course-general-agreement-options {
@@ -434,12 +430,12 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding-bottom: 50px;
+  padding: 2rem 0px 3.125rem 0px;
 
 }
 
 .certifications-container, .two-certs {
-  gap: 6rem;
+  gap: 2rem;
 }
 
 .two-certs, .certifications-box {
@@ -449,12 +445,14 @@
 .two-certs {
   flex-wrap: wrap;
   justify-content: center;
+  flex-shrink: 0;;
 }
 
 .certifications-box {
   background-color: #008142;
   border-radius: 15px;
   width: 350px;
+  height: 29.75rem;
   flex-direction: column;
   align-items: center;
   padding: 10px;
@@ -462,7 +460,7 @@
 
 .cert-img {
   height: auto;
-  width: 250px;
+  width: 15rem;
   margin-bottom: 10px;
 }
 
@@ -482,6 +480,7 @@
 /* Last Section */
 .cybersecurity-img5 {
   margin-top: -1.5rem;
+  margin-bottom: -.5rem;
   width: 100%;
 }
 
@@ -629,4 +628,40 @@
 /* Large screens (if any additional adjustments are needed) */
 @media screen and (min-width: 1440px) {
   /* Styles for extra-large screens, if necessary */
+  
+  /* Certifications */
+  .cybersecurity-certification-section {
+    height: 40rem;
+  }
+
+  .blankspace {
+    padding: 1.5rem;
+  }
+
+  .certifications--h3-box {
+    margin-top: 0rem;
+  }
+
+  .certifications-container {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  
+  .certifications-container, .two-certs {
+    gap: 4rem;
+  }
+
+  .certifications-box{
+    width: 18.12531rem;
+    height: 24.9225rem;
+  }
+
+  .cert-text {
+    font-size: 1.3rem;
+  }
+
+  .cert-img {
+    width: 12rem;
+    margin-top: 1.5rem;
+  }
 }
