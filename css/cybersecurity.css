@@ -60,6 +60,10 @@
 
 /* Main section CSS maybe perhaps not*/
 
+.main-section {
+  margin: 0;
+}
+
 /* H1 and Mission for Cybersecurity */
 .image-h1-mission-statement-box {
   position: relative;
@@ -67,6 +71,7 @@
   text-align: center;
   background: #919191; /* background replacement until image input */
   border-top: 5px solid #00522a;
+  margin: 0;
 }
 
 /* top image needs some work for page */
@@ -151,7 +156,6 @@
 .staff-image-course {
   display: flex;
   flex-direction: row;
-  gap: 5rem;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -172,7 +176,6 @@
   align-items: center;
   background-color: var(--primary-green);
   padding: 20px;
-  border-radius: 1.875rem;
   width: 25rem;
   height: auto;
 }
@@ -408,6 +411,7 @@
 .cybersecurity-certification-section {
   background-color: #FFCF01;
   width: 100%;
+  margin: 0.5rem 0rem;
 }
 
 .certifications--h3-box {
@@ -591,8 +595,8 @@
   */
 
 /* Mobile (Small screens) */
-@media screen and (max-width: 767px) {
-  /* Mobile styles */
+/* @media screen and (max-width: 767px) {
+  /* Mobile styles 
   .h1-summary-container {
     z-index: 1;
     position: absolute;
@@ -618,7 +622,7 @@
   .li-image {
     display: none;
   }
-}
+} */
 
 /* Tablet (Medium screens) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -641,6 +645,37 @@
     max-width: 600px;
   }
 
+  .cybersecurity-staff-course-summary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+    .staff-image-course {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .professor-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--primary-green);
+      padding: 20px;
+      width: 100%;
+      height: auto;
+    }
+
+    .li-image {
+      display: none;
+    }
+
+
 }
 
 /* Large screens (if any additional adjustments are needed) */
@@ -658,6 +693,22 @@
     padding: 3rem;
     width: 90%;
     max-width: 600px;
+  }
+
+  .staff-image-course {
+    gap: 5rem;
+  }
+
+  .professor-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-green);
+    padding: 20px;
+    border-radius: 1.875rem;
+    width: 25rem;
+    height: auto;
   }
 
   /* Imagery resizing */
