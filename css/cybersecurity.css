@@ -139,10 +139,6 @@
   text-align: center;
 }
 
-@media screen {
-  
-}
-
 /* Staff & Course Summary (with image) */
 
 .cybersecurity-staff-course-summary {
@@ -151,6 +147,7 @@
   align-items: center;
   justify-content: center;
   gap: 5rem;
+  margin: 3rem 0rem;
 }
 
 .staff-image-course {
@@ -159,6 +156,7 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  gap: 5rem;
 }
 
 .staff-image-course ul {
@@ -178,6 +176,7 @@
   padding: 20px;
   width: 25rem;
   height: auto;
+  border-radius: 1.875rem;;
 }
 
 .cybersecurity-img2 {
@@ -207,7 +206,6 @@
 .professor-experience-box {
   background: var(--neutral-white);
   margin-top: 15px;
-  border-radius: 15%;
   border-radius: 1.875rem;
   padding: 8px;
   list-style-type: disc;
@@ -292,7 +290,7 @@
 /* Image sizing */
 
 .cybersecurity-img5 img {
-  width: 90rem;
+  width: 100%;
 }
 
 /* Career Completion section */
@@ -411,7 +409,7 @@
 .cybersecurity-certification-section {
   background-color: #FFCF01;
   width: 100%;
-  margin: 0.5rem 0rem;
+  margin: 0rem;
 }
 
 .certifications--h3-box {
@@ -419,7 +417,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 20px;
   width: 100%;
   font-size: 120rem;
 }
@@ -483,13 +480,13 @@
 
 /* Last Section */
 .cybersecurity-img5 {
-  margin-top: -1.5rem;
   margin-bottom: -.5rem;
   width: 100%;
 }
 
 .cybersecurity-img5 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 .section-last {
@@ -582,39 +579,19 @@
   font-weight: bold;
 }
 
-/* 
-    fixes to do when media queriying, fix articulation exiting the section on size morph
-*/
+/*  fixes to do when media queriying, fix articulation exiting the section on size morph  */
 
 /* 
   Breakpoints for the media queries
   I can't tell em apart
   By default breakpoints
   375px, 768px, 1440px
+*/
 
-  */
-
-/* Mobile (Small screens) */
-/* @media screen and (max-width: 767px) {
-  /* Mobile styles 
-  .h1-summary-container {
-    z-index: 1;
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 3rem;
-    width: 90%;
-  }
-
-  .staff-image-course {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-  }
-
+ /* Mobile (Small screens)  */
+ @media screen and (max-width: 767px) {
+  /*  Mobile styles  */
+  /* Images */
   .cybersecurity-img1 {
     display: none;
   }
@@ -622,7 +599,62 @@
   .li-image {
     display: none;
   }
-} */
+/* End of image hiding */
+  .image-h1-mission-statement-box {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 3rem;
+    color: var(--neutral-white);
+    position: relative;
+  }
+
+  .h1-summary-container {
+    z-index: 0;
+    width: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cybersecurity-h1-box {
+    border-radius: 1.875rem;
+    margin-bottom: -1.5rem;
+  }
+
+  .cybersecurity-mission-box {
+    padding: 1rem;
+  }
+
+/* End of Top section */
+
+.cybersecurity-staff-course-summary {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.staff-container-summary {
+  width: 100%;
+}
+.staff-image-course {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  gap: 0;
+}
+
+}
 
 /* Tablet (Medium screens) */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -674,118 +706,4 @@
     .li-image {
       display: none;
     }
-
-
-}
-
-/* Large screens (if any additional adjustments are needed) */
-@media screen and (min-width: 1440px) {
-  /* Styles for extra-large screens, if necessary */
-  
-  /* h1 headbox stuff */
-
-  .h1-summary-container {
-    z-index: 1;
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 3rem;
-    width: 90%;
-    max-width: 600px;
-  }
-
-  .staff-image-course {
-    gap: 5rem;
-  }
-
-  .professor-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-green);
-    padding: 20px;
-    border-radius: 1.875rem;
-    width: 25rem;
-    height: auto;
-  }
-
-  /* Imagery resizing */
-  .cybersecurity-img1 {
-    width: 100%;
-    height: 45rem;
-  }
-
-  .cybersecurity-img5 {
-    margin-top: -1.5rem;
-    margin-bottom: -.5rem;
-    width: 100%;
-  }
-
-  .cybersecurity-img4 img {
-    display: flex;
-    width: 100%;
-    height: 35rem;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border: 1.87rem;
-  }
-
-  /* Certifications */
-  .cybersecurity-certification-section {
-    height: 40rem;
-  }
-
-  .blankspace {
-    padding: 1.5rem;
-  }
-
-  .certifications--h3-box {
-    margin-top: 0rem;
-  }
-
-  .certifications-container {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-  
-  .certifications-container, .two-certs {
-    gap: 4rem;
-  }
-
-  .certifications-box{
-    width: 18.12531rem;
-    height: 24.9225rem;
-  }
-
-  .cert-text {
-    font-size: 1.3rem;
-  }
-
-  .cert-img {
-    width: 12rem;
-    margin-top: 1.5rem;
-  }
-
-  /* No Longer Cert stuff */
-  .section-last {
-    background-color: #7c7c7c;
-    margin: 0;
-    padding: 1rem 1rem 2rem;
-    clear: both;
-    width: 100%;
-  }
-
-  .program-container-description-testimonial {
-    display: flex;
-    padding: 2rem 1.5rem;
-    gap: 2rem;
-    justify-content: center;
-  }
-
-  footer {
-    margin-top: -1.5rem;
-  }
 }
