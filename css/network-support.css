@@ -1,0 +1,61 @@
+:root {
+    --primary-green: #008142;
+    --accent-yellow: #FFCF01;
+    --neutral-black: #333333;
+    --neutral-white: #F5F5F5;
+    --neutral-gray: #CCCCCC;
+    --alert-red: #FF6F61;
+}
+
+/* Desktop styles */
+
+/* General styles */
+
+h1 {
+    background-color: var(--accent-yellow);
+}
+
+/* Hero section */
+
+#hero-sect {
+    text-align: center;
+}
+
+#hero-sect h1 {
+    margin-bottom: 0;
+}
+
+#hero-sect img {
+    max-width: 80%;
+    border: 0.5rem solid var(--accent-yellow);
+}
+
+#hero-sect p {
+    color: var(--primary-green);
+}
+
+/* Overview section */
+
+#overview-sect {
+    background-color: var(--neutral-black);
+    text-align: center;
+}
+
+#overview-sect {
+    color: var(--neutral-white);
+}
+
+#instructor {
+    background-color: var(--primary-green);
+}
+
+#instructor h3 {
+    color:var(--accent-yellow);
+    border-bottom: 0.1rem solid var(--neutral-white);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#instructor img {
+    max-width: 50%;
+}
