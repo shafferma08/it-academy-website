@@ -36,6 +36,32 @@ h1 {
 
 /* Overview section */
 
+/* Styles for accordion */
+.accordion {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.accordion-top { /* the first <p> in the accordion divs */
+    background-color: var(--primary-green);
+    color: var(--accent-yellow);
+    font-weight: bold;
+    border-top-left-radius: 0.8rem;
+    border-top-right-radius: 0.8rem;
+    margin-bottom: 0;
+}
+
+.accordion-bottom { /* the second <p> in the accordion divs */
+    background-color: var(--neutral-white);
+    color: var(--neutral-black);
+    border-bottom-right-radius: 0.8rem;
+    border-bottom-left-radius: 0.8rem;
+}
+
+@keyframes accordion {
+
+}
+
 #overview-sect {
     background-color: var(--neutral-black);
     text-align: center;
@@ -108,4 +134,30 @@ h1 {
 #career-info-sect table td {
     border: 1px solid black;
     height: 2rem;
+}
+
+/* Future section */
+
+#future-sect {
+    text-align: center;
+}
+
+#yt {
+    width: 50%;
+    border: 0.5rem solid var(--accent-yellow);
+}
+
+.contact-field {
+    color: var(--neutral-white);
+    background-color: var(--primary-green);
+    border: 0.5rem solid var(--accent-yellow);
+    font-weight: bold;
+    margin: 0 auto;
+    width: 40%;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.contact-field h2 {
+    color: var(--neutral-white);
 }
