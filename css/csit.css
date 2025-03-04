@@ -1,3 +1,11 @@
+html, body {
+  min-width: 100vw; /* Prevents shrinking */
+  min-height: 100vh; /* Ensures full height */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  display: block;
+}
 /* background image section */
 
 
@@ -14,6 +22,9 @@
   justify-content: center; /* centers horizontally */
   
 }
+
+
+
 
 .overlay {
   width: 1400px;
@@ -41,39 +52,40 @@
 
 .badge-section {
   display: flex;
-  flex-direction: column;
+ flex-direction: row;
   justify-content: center;
   
   
 }
 
-/* Badge Section */
+
+
 .badge-section section {
   display: flex;
   justify-content: space-between; /* Keeps the two containers side by side */
   gap: 30px; /* Adds space between the containers */
-  flex-wrap: nowrap; /* Ensure they stay side by side and don't wrap */
-  
-  
+  flex-wrap: nowrap; /* Ensures they stay side by side and don't wrap */
 }
 
 /* General container styles */
+.container-wrapper {
+  display: flex;
+  gap: 30px; /* Adds space between the yellow and green boxes */
+}
+
 .container {
   display: flex;
- width: 600px;
- border-radius: 20px;
- 
-  
+  width: 600px;
+  border-radius: 20px;
 }
 
 /* Green box specific styles */
 .green-box {
-  display: flex; /* Enable flexbox */
-  justify-content: space-between; /* Distribute space between the elements horizontally */
-  align-items: flex-start; /* Aligns items at the top to avoid misalignment */
+  display: flex;
+  justify-content: space-between; /* Distribute space inside the green box */
+  align-items: flex-start; /* Aligns items at the top */
   background-color: var(--primary-green); /* Green background */
   padding-top: 50px;
-
 }
 
 .green-box p {
@@ -86,9 +98,8 @@
   display: flex;
   text-align: center;
   gap: 20px;
-  padding: 20px; /* Optional: Adds padding to the yellow box for spacing */
+  padding: 20px; /* Adds padding to the yellow box for spacing */
 }
-
 /* Button and image styles */
 .button-div {
   display: flex;
@@ -120,7 +131,7 @@
   display: flex;
  justify-content: space-around;
  gap: 80px;
-
+  width: 100%;
   
  
   
@@ -138,8 +149,7 @@
 
 .certications-img {
   display: flex;
-  justify-content: space-between;
-  gap: 80px;
+  gap: 40px;
 }
 
 .learn-img img {
@@ -229,25 +239,246 @@ padding: 20px;
   
 }
 
+/* Slideshow container */
 .slideshow-container {
-  
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-.grey-box {
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev:hover, .next:hover {
+  color: var(--accent-yellow);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.graph-box {
   background-color: var(--neutral-gray);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: var(--border-radius-3);
- 
+  padding-top: 15px;
+  
+  
 }
 
-.grey-paragraph {
-  font-size: var(--font-size-body);
-  color: var(--primary-green);
+.graph {
+  width: 100%;
+  max-width: 600px; /* Adjust for design needs */
+  height: 400px; /* Ensures readability */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(0, 129, 66, 0.1); /* Light school green tint for subtle styling */
+  border-radius: 10px;
+}
+
+
+
+.graph canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.graph-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.graph-header h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #008142; /* School green */
+  margin-bottom: 5px;
+}
+
+.graph-header p {
+  font-size: 14px;
+  color: #333; /* Neutral text color */
+  line-height: 1.5;
+}
+
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+
+.footer-img-box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.footer-img {
+  flex: 1;
+  text-align: center;
   
 }
 
 
+
+/* Media Queries */
+
+
+
+
+/* For smaller screens: Mobile */
+@media screen and (max-width: 550px) {
+  
+  body{
+    width: 100%;
+    
+    
+  }
+
+  .background-container {
+    background-image: none;
+  }
+
+  .badge-section {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+
+  .container-wrapper {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+  }
+
+  .middle {
+    flex-direction: column; /* Stack items vertically */
+    gap: 40px; /* Adjust space between items */
+  }
+
+  .learning {
+    display: none;
+  }
+
+  .certications-img {
+    flex-direction: column; /* Stack images vertically */
+    gap: 30px; /* Adjust space between images */
+  }
+
+  .container {
+    width: 100%; /* Ensure the container takes full width */
+    margin-bottom: 20px; /* Add space between containers */
+  }
+
+  .button-div {
+    flex-direction: column; /* Stack button and text vertically */
+  }
+
+  .bottom {
+    flex-direction: column;
+  }
+
+  iframe {
+    width: 340px;
+    height: 260px;
+  }
+
+  .mySlides  img{
+    width: 340px;
+    height: 260px;
+
+  }
+} 
+
+
+
+@media (max-width: 560px) {
+  .background-container {
+  
+  }
+
+}
 
