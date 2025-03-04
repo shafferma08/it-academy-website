@@ -105,8 +105,8 @@
 /* Individual card styling */
 .staff-card {
   flex: 1;
-  min-width: 280px; /* Ensures cards shrink but don’t get too small */
-  max-width: 400px; /* Prevents them from getting too large */
+  /* min-width: 280px; /* Ensures cards shrink but don’t get too small 
+  max-width: 400px; Prevents them from getting too large */
   background-color: var(--primary-green);
   padding: 1.5rem;
   border-radius: 15px;
@@ -545,4 +545,14 @@
   .image-card {
     display: none;
   }
+
+  .cybersecurity-staff-course-summary {
+    padding: 0;
+    margin: 0;
+}
+
+  .staff-card {
+  border-radius: 0;
+}
+
 }
