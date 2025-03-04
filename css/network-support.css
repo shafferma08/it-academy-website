@@ -59,3 +59,53 @@ h1 {
 #instructor img {
     max-width: 50%;
 }
+
+/* Certs section */
+
+#certs-sect {
+    color: var(--primary-green);
+    font-weight: bold;
+}
+
+.flex-container {
+    display: grid;
+} /* Move this somewhere else later */
+
+#certs-container {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    text-align: center;
+}
+
+#certs-container img {
+    width: 50%;
+}
+
+.divider-line {
+    border-bottom: 0.2rem solid var(--primary-green);
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+/* Career Information section */
+
+#career-info-sect {
+    text-align: center;
+}
+
+#career-info-sect table {
+    margin: 0 auto;
+    width: 90%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+#career-info-sect table th {
+    height: 2.5rem;
+    background-color: var(--primary-green);
+    color: var(--neutral-white)
+}
+
+#career-info-sect table td {
+    border: 1px solid black;
+    height: 2rem;
+}
