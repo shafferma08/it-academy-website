@@ -12,6 +12,11 @@ let ProgramThree = document.getElementById("ProgramThree");
 let ProgramFour = document.getElementById("ProgramFour");
 let ProgramFive = document.getElementById("ProgramFive");
 let ProgramSix = document.getElementById("ProgramSix");
+let ProgramSeven = document.getElementById("ProgramSeven");
+let ProgramEight = document.getElementById("ProgramEight");
+
+let ProgramMatchContainer = document.getElementById("ProgramMatchContainer")
+ProgramMatchContainer.style.display = "none"
 // Clearwater Campus ignore this
 let accountingOperations, medicalAdministrativeSpecialist, practicalNursingClearwater, childCareCenterOperationsClearwater; // Business, Medical, & Childcare
 let computerSystemsITClearwater, networkSupportServices, webDevelopment, electronicSystemsIntegration; // IT & Technology
@@ -78,28 +83,28 @@ function questionThree(Location, AnswerChoice) {
     if (Location === "Clearwater") {
         switch (AnswerChoice) {
             case 1:
-                AnswerOne.innerHTML = "Diagnosing and repairing car engines.";
-                AnswerTwo.innerHTML = "Maintaining and servicing diesel trucks and equipment.";
-                AnswerThree.innerHTML = "Setting up and troubleshooting computer networks.";
-                AnswerFour.innerHTML = "Installing and repairing electrical systems.";
+                AnswerOne.innerHTML = "Diagnosing and repairing car engines."; //done
+                AnswerTwo.innerHTML = "Maintaining and servicing diesel trucks and equipment."; //done
+                AnswerThree.innerHTML = "Using computers, building, troubleshooting or networking.";
+                AnswerFour.innerHTML = "Installing and repairing electrical systems."; //done
                 break;
             case 2:
-                AnswerOne.innerHTML = "Creating gourmet dishes in a professional kitchen.";
-                AnswerTwo.innerHTML = "Baking specialty cakes, pastries, and bread.";
-                AnswerThree.innerHTML = "Designing and decorating indoor spaces.";
-                AnswerFour.innerHTML = "Organizing and managing large-scale events.";
+                AnswerOne.innerHTML = "Creating gourmet dishes in a professional kitchen."; //done
+                AnswerTwo.innerHTML = "Baking specialty cakes, pastries, and bread."; //done
+                AnswerThree.innerHTML = "Designing and decorating indoor spaces."; //done
+                AnswerFour.innerHTML = "Organizing and managing large-scale events."; //done
                 break;
             case 3:
-                AnswerOne.innerHTML = "Managing a child care center.";
-                AnswerTwo.innerHTML = "Assisting doctors and medical offices with administrative tasks.";
-                AnswerThree.innerHTML = "Providing hands-on nursing care.";
-                AnswerFour.innerHTML = "Working in the food service industry.";
+                AnswerOne.innerHTML = "Managing a child care center."; //done
+                AnswerTwo.innerHTML = "Assisting doctors and medical offices with administrative tasks."; //done
+                AnswerThree.innerHTML = "Providing hands-on nursing care."; // done
+                AnswerFour.innerHTML = "Working in the food service industry."; //done
                 break;
             case 4:
-                AnswerOne.innerHTML = "Crafting custom cabinets and woodwork.";
-                AnswerTwo.innerHTML = "Welding and fabricating metal structures.";
-                AnswerThree.innerHTML = "Operating high-precision machining tools.";
-                AnswerFour.innerHTML = "Installing and maintaining HVAC systems.";
+                AnswerOne.innerHTML = "Crafting custom cabinets and woodwork."; //done
+                AnswerTwo.innerHTML = "Welding and fabricating metal structures."; //done
+                AnswerThree.innerHTML = "Operating high-precision machining tools."; //done
+                AnswerFour.innerHTML = "Installing and maintaining HVAC systems."; //done
                 break;
         }
     } else if (Location === "StPete") {
@@ -158,37 +163,42 @@ function questionThree(Location, AnswerChoice) {
         }
     }
 
-    AnswerOne.onclick = function () { questionFourList(Location, 1); };
-    AnswerTwo.onclick = function () { questionFourList(Location, 2); };
-    AnswerThree.onclick = function () { questionFourList(Location, 3); };
-    AnswerFour.onclick = function () { questionFourList(Location, 4); };
+    AnswerOne.onclick = function () { questionFourList(Location, FinalAnswerChoice = AnswerOne.innerHTML); };
+    AnswerTwo.onclick = function () { questionFourList(Location, FinalAnswerChoice = AnswerTwo.innerHTML); };
+    AnswerThree.onclick = function () { questionFourList(Location, FinalAnswerChoice = AnswerThree.innerHTML); };
+    AnswerFour.onclick = function () { questionFourList(Location, FinalAnswerChoice = AnswerFour.innerHTML); };
 }
 
 // Function to update the program list based on user's location and final choice
 function questionFourList(Location, FinalAnswerChoice) {
     if (Location == "Clearwater") {
         switch(FinalAnswerChoice) {
-            case 1:
+            case "Diagnosing and repairing car engines.":
+            case "Maintaining and servicing diesel trucks and equipment.":
                 // Automotive, Diesel, & Technology (Technology/Repair interest)
                 Interests.innerHTML = "Based on your interest in maintaining and repairing technology or vehicles, here are some program suggestions for you...";
-                ProgramOne.innerHTML = "Master Automotive Service Technology 1";
-                ProgramTwo.innerHTML = "Master Automotive Service Technology 2";
-                ProgramThree.innerHTML = "Diesel Maintenance Technician";
-                ProgramFour.innerHTML = "Diesel Systems Technician 1";
-                ProgramFive.innerHTML = "Diesel Systems Technician 2";
-                ProgramSix.innerHTML = "Marine Service Technologies";
+                ProgramOne.innerHTML = '<a target="_blank" href="https://www.pcsb.org/Page/7412">Master Automotive Service Technology 1</a>';
+                ProgramTwo.innerHTML = '<a target="_blank" href="https://www.pcsb.org/Page/38314">Diesel Maintenance Technician 1</a>';
+                ProgramThree.innerHTML = '<a target="_blank" href="https://www.pcsb.org/Page/6961">Diesel System Technician 1</a>';
+                ProgramFour.innerHTML = '<a target="_blank" href="https://www.pcsb.org/Page/15218">Marine Service Technologies</a>';
                 break;
-            case 2:
+            case "Creating gourmet dishes in a professional kitchen.":
+            case "Baking specialty cakes, pastries, and bread.":
+            case "Working in the food service industry.":
+            case "Designing and decorating indoor spaces.":
+            case "Organizing and managing large-scale events.":
                 // Culinary & Personal Services (Cooking, Baking, and Decorating interest)
                 Interests.innerHTML = "Based on your interest in cooking, baking, or decorating spaces, here are some program suggestions for you...";
-                ProgramOne.innerHTML = "Professional Culinary Arts";
-                ProgramTwo.innerHTML = "Baking and Pastry Arts";
-                ProgramThree.innerHTML = "Interior Decorating Services";
-                ProgramFour.innerHTML = "Stage Production";
-                ProgramFive.innerHTML = "Fundamental Foodservice Skills";
-                ProgramSix.innerHTML = "Barbering";
+                ProgramOne.innerHTML = '<a target="_blank" href="https://www.pcsb.org/Page/7009">Professional Culinary Arts</a>';
+                ProgramTwo.innerHTML = '<a target="_blank" href="https://www.pcsb.org/Page/15220">Baking and Pastry Arts</a>';
+                ProgramThree.innerHTML = '<a target="_blank" href="https://www.pcsb.org/Page/6964">Interior Decorating Services</a>';
+                ProgramFour.innerHTML = '<a target="_blank" href="https://www.pcsb.org/Page/26411">Stage Production</a>';
+                ProgramFive.innerHTML = '<a target="_blank" href="https://www.pcsb.org/Page/39767">Fundamental Foodservice Skills</a>';;
+                ProgramSix.innerHTML = '<a href="https://www.pcsb.org/Page/17129">Barbering</a>';
                 break;
-            case 3:
+            case "Providing hands-on nursing care.":
+            case "Assisting doctors and medical offices with administrative tasks.":
+            case "Managing a child care center.":
                 // Healthcare & Childcare (Working with Children/Patients)
                 Interests.innerHTML = "Based on your interest in working with children, patients, or the public, here are some program suggestions for you...";
                 ProgramOne.innerHTML = "Medical Administrative Specialist";
@@ -198,7 +208,11 @@ function questionFourList(Location, FinalAnswerChoice) {
                 ProgramFive.innerHTML = "Medical Coding and Billing";
                 ProgramSix.innerHTML = "Early Childhood Education";
                 break;
-            case 4:
+            case "Crafting custom cabinets and woodwork.":
+            case "Welding and fabricating metal structures.":
+            case "Operating high-precision machining tools.":
+            case "Installing and maintaining HVAC systems.":
+            case "Installing and repairing electrical systems.":
                 // Skilled Trades & Industrial Technology (Working with tools or machinery)
                 Interests.innerHTML = "Based on your interest in working with tools and machinery, here are some program suggestions for you...";
                 ProgramOne.innerHTML = "Welding Technology";
@@ -208,20 +222,30 @@ function questionFourList(Location, FinalAnswerChoice) {
                 ProgramFive.innerHTML = "Cabinetmaking";
                 ProgramSix.innerHTML = "Welding Technology Advanced";
                 break;
+
+            case "Using computers, building, troubleshooting or networking.":
+                Interests.innerHTML = "Based on your interest using computers, building, troubleshooting or networking, here are some program suggestions for you...";
+                ProgramOne.innerHTML = "Web Development";
+                ProgramTwo.innerHTML = "Network Support Services";
+                ProgramThree.innerHTML = "Electronic Systems Integration and Automation";
+                ProgramFour.innerHTML = "Computer Systems & Information Technology";
         }
     } else if (Location == "StPete") {
         switch(FinalAnswerChoice) {
-            case 1:
+            case "Repairing and customizing vehicle exteriors.":
+            case "Diagnosing and fixing car engines.":
                 // Automotive, Diesel, & Technology (Technology/Repair interest)
                 Interests.innerHTML = "Based on your interest in repairing vehicles and technology, here are some program suggestions for you...";
                 ProgramOne.innerHTML = "Master Automotive Service Technology 1";
-                ProgramTwo.innerHTML = "Master Automotive Service Technology 2";
                 ProgramThree.innerHTML = "Automotive Collision Technology";
                 ProgramFour.innerHTML = "Vehicle Maintenance and Repair";
                 ProgramFive.innerHTML = "Commercial Vehicle Driving";
                 ProgramSix.innerHTML = "Diesel Systems Technician 1";
                 break;
-            case 2:
+            case "Creating gourmet dishes in a professional kitchen.":
+            case "Working behind the scenes in television production.":
+            case "Designing and repairing custom jewelry.":
+            case "Styling hair and providing beauty treatments.":
                 // Culinary & Personal Services (Cooking, Baking, and Decorating interest)
                 Interests.innerHTML = "Based on your interest in culinary arts, here are some program suggestions for you...";
                 ProgramOne.innerHTML = "Professional Culinary Arts";
@@ -230,8 +254,13 @@ function questionFourList(Location, FinalAnswerChoice) {
                 ProgramFour.innerHTML = "Jewelry Design and Repair";
                 ProgramFive.innerHTML = "Barbering";
                 ProgramSix.innerHTML = "Cosmetology";
+                ProgramSeven.innerHTML = "Nails Specialty"
+                ProgramEight.innerHTML = "Facial Specialty"
                 break;
-            case 3:
+            case "Assisting in dental offices and clinics.":
+            case "Helping patients with medical records and billing.":
+            case "Providing emergency medical care.":
+            case "Teaching and caring for young children.":
                 // Healthcare & Childcare (Working with Children/Patients)
                 Interests.innerHTML = "Based on your interest in working with children and patients, here are some program suggestions for you...";
                 ProgramOne.innerHTML = "Emergency Medical Technician";
@@ -240,8 +269,12 @@ function questionFourList(Location, FinalAnswerChoice) {
                 ProgramFour.innerHTML = "Practical Nursing";
                 ProgramFive.innerHTML = "Child Care Center Operations";
                 ProgramSix.innerHTML = "Early Childhood Education";
+                ProgramSeven.innerHTML = "Surgical Technology"
                 break;
-            case 4:
+            case "Creating detailed technical drawings and models.":
+            case "Constructing and installing plumbing systems.":
+            case "Welding and fabricating metal structures.":
+            case "Crafting custom metal and jewelry pieces.":
                 // Skilled Trades & Industrial Technology (Working with tools or machinery)
                 Interests.innerHTML = "Based on your interest in working with tools and machinery, here are some program suggestions for you...";
                 ProgramOne.innerHTML = "Electricity";
@@ -254,17 +287,21 @@ function questionFourList(Location, FinalAnswerChoice) {
         }
     } else if (Location == "Both") {
         switch(FinalAnswerChoice) {
-            case 1:
+            case "Diagnosing and repairing car engines.":
+            case "Maintaining and servicing diesel trucks and equipment.":
+            case "Setting up and troubleshooting computer networks and security systems.":
+            case "Installing and repairing electrical or HVAC systems.":
                 // Automotive, Diesel, & Technology (Technology/Repair interest)
                 Interests.innerHTML = "Based on your interest in maintaining and repairing vehicles or technology, here are some program suggestions for you...";
                 ProgramOne.innerHTML = "Master Automotive Service Technology 1";
-                ProgramTwo.innerHTML = "Master Automotive Service Technology 2";
                 ProgramThree.innerHTML = "Diesel Maintenance Technician";
                 ProgramFour.innerHTML = "Diesel Systems Technician 1";
-                ProgramFive.innerHTML = "Diesel Systems Technician 2";
                 ProgramSix.innerHTML = "Marine Service Technologies";
                 break;
-            case 2:
+            case "Creating gourmet dishes in a professional kitchen.":
+            case "Baking specialty cakes, pastries, and bread.":
+            case "Designing and decorating indoor spaces.":
+            case "Managing behind-the-scenes production for events and television.":
                 // Culinary & Personal Services (Cooking, Baking, and Decorating interest)
                 Interests.innerHTML = "Based on your interest in cooking, baking, or decorating spaces, here are some program suggestions for you...";
                 ProgramOne.innerHTML = "Professional Culinary Arts";
@@ -274,7 +311,10 @@ function questionFourList(Location, FinalAnswerChoice) {
                 ProgramFive.innerHTML = "Fundamental Foodservice Skills";
                 ProgramSix.innerHTML = "Barbering";
                 break;
-            case 3:
+            case "Managing a child care center or teaching young children.":
+            case "Assisting in medical offices, hospitals, or surgical rooms.":
+            case "Working in a dental office assisting with patient care.":
+            case "Helping customers in food service or hospitality.":
                 // Healthcare & Childcare (Working with Children/Patients)
                 Interests.innerHTML = "Based on your interest in working with children, patients, or the public, here are some program suggestions for you...";
                 ProgramOne.innerHTML = "Medical Administrative Specialist";
@@ -284,7 +324,10 @@ function questionFourList(Location, FinalAnswerChoice) {
                 ProgramFive.innerHTML = "Medical Coding and Billing";
                 ProgramSix.innerHTML = "Early Childhood Education";
                 break;
-            case 4:
+            case "Crafting custom furniture, cabinets, or home designs.":
+            case "Welding, machining, or fabricating metal structures.":
+            case "Creating technical drawings, models, or working with public infrastructure.":
+            case "Crafting and repairing custom jewelry.":
                 // Skilled Trades & Industrial Technology (Working with tools or machinery)
                 Interests.innerHTML = "Based on your interest in working with tools and machinery, here are some program suggestions for you...";
                 ProgramOne.innerHTML = "Welding Technology";
@@ -297,3 +340,5 @@ function questionFourList(Location, FinalAnswerChoice) {
         }
     }
 }
+
+// nailsSpecialty facialsSpecialty
