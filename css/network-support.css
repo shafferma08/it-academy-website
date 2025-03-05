@@ -39,7 +39,7 @@ h1 {
 /* Styles for accordion */
 .accordion {
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .accordion-top { /* the first <p> in the accordion divs */
@@ -49,6 +49,11 @@ h1 {
     border-top-left-radius: 0.8rem;
     border-top-right-radius: 0.8rem;
     margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+.accordion-top:hover {
+    cursor: pointer;
 }
 
 .accordion-bottom { /* the second <p> in the accordion divs */
@@ -56,23 +61,85 @@ h1 {
     color: var(--neutral-black);
     border-bottom-right-radius: 0.8rem;
     border-bottom-left-radius: 0.8rem;
+    height: auto;
 }
 
-@keyframes accordion {
+@keyframes accordion-open {
+    0% {
+        height: 0;
+    }
 
+    25% {
+        height: 0.5rem;
+    }
+
+    50% {
+        height: 1rem;
+    }
+
+    75% {
+        height: 1.5rem;
+    }
+
+    100% {
+        height: auto;
+    }
+}
+
+@keyframes accordion-closed {
+    0% {
+        height: 2rem;
+    }
+
+    25% {
+        height: 1.5rem;
+    }
+
+    50% {
+        height: 1rem;
+    }
+
+    75% {
+        height: 0.5rem;
+    }
+
+    100% {
+        height: 0rem;
+    }
+
+}
+
+.accordion-open {
+    display: block;
+    animation-name: accordion-open;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+.accordion-closed {
+    display: none;
+    animation-name: accordion-closed;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+}
+
+/* Styles for layout of overview section */
+
+#overview-container {
+    grid-template-columns: 2fr 1fr;
 }
 
 #overview-sect {
     background-color: var(--neutral-black);
     text-align: center;
-}
-
-#overview-sect {
     color: var(--neutral-white);
 }
 
 #instructor {
     background-color: var(--primary-green);
+    width: 80%;
+    margin: auto auto;
+    border-radius: 1rem;
 }
 
 #instructor h3 {
@@ -84,6 +151,12 @@ h1 {
 
 #instructor img {
     max-width: 50%;
+    margin: 0.5rem;
+}
+
+#instructor p {
+    padding: 0.5rem;
+    padding-top: 0;
 }
 
 /* Certs section */
@@ -93,7 +166,7 @@ h1 {
     font-weight: bold;
 }
 
-.flex-container {
+.grid-container {
     display: grid;
 } /* Move this somewhere else later */
 
@@ -156,6 +229,11 @@ h1 {
     width: 40%;
     margin-bottom: 0;
     margin-top: 0;
+}
+
+.contact-field-bottom {
+    position: relative;
+    bottom: 0.4rem;
 }
 
 .contact-field h2 {

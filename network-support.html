@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/network-support.css">
 
+    <!-- JavaScript -->
+    <script src="js/network-support.js" defer></script>
+
 </head>
 <body>
     <!-- Header -->
@@ -55,63 +58,72 @@
         <section id="overview-sect">
             <h1>PROGRAM OVERVIEW</h1>
 
-            <p><b><u>What You'll Learn:</u></b></p>
+            <div class="grid-container" id="overview-container">
+                <article id="learn">
+                    <p><b><u>What You'll Learn:</u></b></p>
 
-            <div class="accordion">
-                <p class="accordion-top">Information Technology Assistant (150 hours)</p>
-                <p class="accordion-bottom">Introduces foundational computer application and business information systems, emphasizing personal and workplace proficiency in a tech-driven society.</p>
+                    <div class="accordion">
+                        <p class="accordion-top">Information Technology Assistant (150 hours)</p>
+                        <p class="accordion-bottom accordion-open">Introduces foundational computer application and business information systems, emphasizing personal and workplace proficiency in a tech-driven society.</p>
+                    </div>
+
+                    <div class="accordion">
+                        <p class="accordion-top">Computer Support Assistant (150 hours)</p>
+                        <p class="accordion-bottom accordion-closed">Covers basic hardware and operating system support, including installation, troubleshooting, and an introduction to network concepts.</p>
+                    </div>
+
+                    <div class="accordion">
+                        <p class="accordion-top">Network Support Help Desk Assistant (150 hours)</p>
+                        <p class="accordion-bottom accordion-closed">Provides technician-level training in networking, focusing on terminology, concepts, protocols, and basic configurations using OSI (Open Systems Interconnection) and TCP/IP models.</p>
+                    </div>
+
+                    <div class="accordion">
+                        <p class="accordion-top">Network Support Administrator (150 hours)</p>
+                        <p class="accordion-bottom accordion-closed">Offers training in network setup, configuration, troubleshooting, and support, with a focus on hardware like routers, switches, and bridges. It also includes teamwork and leadership development.</p>
+                    </div>
+
+                    <div class="accordion">
+                        <p class="accordion-top">Senior Network Administrator (150 hours)</p>
+                        <p class="accordion-bottom accordion-closed">Advances training in configuring and managing LAN (Local Area Network) and WAN (Wide Area Network) networks, with emphasis and advanced hardware support.</p>
+                    </div>
+
+                    <div class="accordion">
+                        <p class="accordion-top">Wireless Network Administrator (150 hours)</p>
+                        <p class="accordion-bottom accordion-closed">Focuses on the setup, configuration, security, and maintenance of wireless local area networks.</p>
+                    </div>
+
+                    <div class="accordion">
+                        <p class="accordion-top">Data Communication Analyst (150 hours)</p>
+                        <p class="accordion-bottom accordion-closed">Emphasizes infrastructure security for LAN and WAN networks, along with general communication security skills.</p>
+                    </div>
+                </article>
+
+                <article id="teacher">
+                    <p><b><u>Instructor:</u></b></p>
+
+                    <figure id="instructor">
+                        <img src="images/Bojilov_Photo.png" alt="Program instructor Viktor Bojilov" style="border-radius: 50% 50%;">
+                        <figcaption>
+                            <h3>Viktor Bojilov</h3>
+                            <p>Viktor Bojilov is a passionate and experienced IT professional with over 15 years in the industry. Holding a Master of Science in Engineering and multiple certifications, including CompTIA A+, Net+, Sec+, CTT+, CCENT, MCP, and MCTS.</p>
+                            <p>As a CompTIA Certified Technical Trainer, he is committed to helping others succeed and believes that teaching not only promotes learning but can change lives.</p>
+                        </figcaption>
+                    </figure>
+                </article>
             </div>
-
-            <div class="accordion">
-                <p class="accordion-top">Computer Support Assistant (150 hours)</p>
-                <p class="accordion-bottom">Covers basic hardware and operating system support, including installation, troubleshooting, and an introduction to network concepts.</p>
-            </div>
-
-            <div class="accordion">
-                <p class="accordion-top">Network Support Help Desk Assistant (150 hours)</p>
-                <p class="accordion-bottom">Provides technician-level training in networking, focusing on terminology, concepts, protocols, and basic configurations using OSI (Open Systems Interconnection) and TCP/IP models.</p>
-            </div>
-
-            <div class="accordion">
-                <p class="accordion-top">Network Support Administrator (150 hours)</p>
-                <p class="accordion-bottom">Offers training in network setup, configuration, troubleshooting, and support, with a focus on hardware like routers, switches, and bridges. It also includes teamwork and leadership development.</p>
-            </div>
-
-            <div class="accordion">
-                <p class="accordion-top">Senior Network Administrator (150 hours)</p>
-                <p class="accordion-bottom">Advances training in configuring and managing LAN (Local Area Network) and WAN (Wide Area Network) networks, with emphasis and advanced hardware support.</p>
-            </div>
-
-            <div class="accordion">
-                <p class="accordion-top">Wireless Network Administrator (150 hours)</p>
-                <p class="accordion-bottom">Focuses on the setup, configuration, security, and maintenance of wireless local area networks.</p>
-            </div>
-
-            <div class="accordion">
-                <p class="accordion-top">Data Communication Analyst (150 hours)</p>
-                <p class="accordion-bottom">Emphasizes infrastructure security for LAN and WAN networks, along with general communication security skills.</p>
-            </div>
-
-            <p><b><u>Instructor:</u></b></p>
-
-            <figure id="instructor">
-                <img src="images/Bojilov_Photo.png" alt="Program instructor Viktor Bojilov" style="border-radius: 50% 50%;">
-                <figcaption>
-                    <h3>Viktor Bojilov</h3>
-                    <p>Viktor Bojilov is a passionate and experienced IT professional with over 15 years in the industry. Holding a Master of Science in Engineering and multiple certifications, including CompTIA A+, Net+, Sec+, CTT+, CCENT, MCP, and MCTS.</p>
-                    <p>As a CompTIA Certified Technical Trainer, he is committed to helping others succeed and believes that teaching not only promotes learning but can change lives.</p>
-                </figcaption>
-            </figure>
 
             <article> <!-- Testimonials -->
                 <h3>Student Testimonials</h3>
             </article>
+
+            <button class="primary">Apply now!</button>
+
         </section>
 
         <section id="certs-sect">
             <h1>CERTIFICATIONS</h1>
 
-            <div id="certs-container" class="flex-container">
+            <div id="certs-container" class="grid-container">
                 <figure>
                     <img src="images/CompTIA-Netplus.jpg" alt="CompTIA Network+ Certification" class="cert-img">
                     <figcaption>
@@ -183,7 +195,7 @@
                 <p>fieldsy@pcsb.org</p>
             </article>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/6x4zWjJApjA?si=kPRB3qIVpUKH3Rb2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="yt"></iframe>
-            <article class="contact-field">
+            <article class="contact-field contact-field-bottom">
                 <h2>COURSE INFORMATION</h2>
                 <p>Viktor Bojilov</p>
                 <p>727-538-7167 ext. 2103</p>
@@ -197,6 +209,6 @@
     </footer>
 
     <!-- JavaScript -->
-    <script src="js/script.js"></script>
+    <!-- <script src="js/network-support.js" defer></script> -->
 </body>
 </html>
