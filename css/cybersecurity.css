@@ -98,7 +98,7 @@
   flex-wrap: wrap; /* Allows wrapping for smaller screens */
   justify-content: center;
   gap: 2rem; /* Space between cards */
-  max-width: 1200px; /* Prevents cards from getting too wide */
+  max-width: 1400px; /* Prevents cards from getting too wide */
   width: 100%;
 }
 
@@ -110,7 +110,6 @@
   background-color: var(--primary-green);
   padding: 1.5rem;
   border-radius: 15px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -129,23 +128,16 @@
 }
 
 /* Image styles */
-.cybersecurity-img2 img {
-  width: 100%;
-  border-radius: 15px;
-  height: auto;
-}
 
 .cybersecurity-img2 {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
   border-radius: 50%;
 }
 
 .cybersecurity-img2 img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .image-card {
@@ -155,25 +147,26 @@
   flex: 1;
 }
 
+.professor-name-box h3 {
+  color: var(--neutral-white);
+  font-size: var(--font-size-h3);
+}
+ 
 /* Professor Experience Box */
 .professor-experience-box {
   background: var(--neutral-white);
+  opacity: .85;
   margin-top: 15px;
   border-radius: 15px;
-  padding: 8px;
+  padding: 20px;
+  text-align: center;
 }
 
-.professor-experience-box ul {
-  flex-direction: column;
-  gap: 0.5rem;
-  list-style-type: disc;
-  padding-left: 20px;
+.professor-experience-box h4 {
+  font-size: var(--font-size-h4);
+  color: var(--primary-green);
 }
 
-.professor-experience-box ul li {
-  font-size: 1rem;
-  font-weight: 500;
-}
 
 /* Course Summary Box */
 .course-summary-box {
@@ -254,7 +247,7 @@
 .details-agreement-box {
   background-color: var(--neutral-black);
   border-radius: 1.875rem;
-  padding: 10px 0.625rem -1.2rem 0.625rem;
+  padding: 1.2rem 0.625rem 1.2rem 0.625rem;
 }
 
 .details-agreement-box h3 {
@@ -494,6 +487,20 @@
   By default breakpoints
   375px, 768px, 1440px
 */
+/* Tablet (Medium screens) */
+@media screen and (max-width: 1023px) {
+  
+  .image-card {
+    display: none;
+  }
+
+  .cybersecurity-staff-course-summary {
+    padding: 0;
+    margin: 0;
+}
+
+
+}
 
  /* Mobile (Small screens)  */
  @media screen and (max-width: 767px) {
@@ -511,9 +518,6 @@
     line-height: 1.4; /* Adjust spacing for better fit */
   }
   
-  .image-card {
-    display: none;
-  }
 
   .certifications-container {
     flex-direction: column;
@@ -529,30 +533,12 @@
   }
 
   .staff-container-summary {
-    gap: 0;
+    gap: 10px;
+    flex-direction: column;
   }
 
-  .staff-card {
-    border-radius: 0;
-  }
+
 }
 
 /* Mobile switch @ 723>724 */
 
-/* Tablet (Medium screens) */
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  
-  .image-card {
-    display: none;
-  }
-
-  .cybersecurity-staff-course-summary {
-    padding: 0;
-    margin: 0;
-}
-
-  .staff-card {
-  border-radius: 0;
-}
-
-}
