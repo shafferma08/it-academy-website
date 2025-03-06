@@ -299,10 +299,16 @@
 }
 
 .cybersecurity-img4 img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
+.career-possibilities-n-img, .general-course-agreement-box {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
 
 /* Certification Boxes */
 
