@@ -1,20 +1,25 @@
 var accordTop = document.getElementsByClassName("accordion-top");
 var accordBottom = document.getElementsByClassName("accordion-bottom");
 
-
-
-function playAccordion (event) {
+function playAccordion(event) {
     for (var i = 0; i < accordBottom.length; i++) {
-        if (accordBottom[i].classList.contains("accordion-closed") && event.target == accordTop[i]) {
-            accordBottom[i].classList.add("accordion-open");
-            accordBottom[i].classList.remove("accordion-closed");
-        } else if (accordBottom[i].classList.contains("accordion-open") && event.target == accordTop[i]) {
-            accordBottom[i].classList.add("accordion-closed");
-            accordBottom[i].classList.remove("accordion-open");
+        if (event.target === accordTop[i]) {
+            if (accordBottom[i].style.maxHeight && accordBottom[i].style.maxHeight !== "0px") {
+                // If it's open, close it
+                accordBottom[i].style.maxHeight = "0px";
+            } else {
+                // Close all accordions first
+                for (var j = 0; j < accordBottom.length; j++) {
+                    accordBottom[j].style.maxHeight = "0px";
+                }
+                // Then open the clicked one
+                accordBottom[i].style.maxHeight = accordBottom[i].scrollHeight + "px";
+            }
         }
     }
 }
 
-for (var i = 0; i < accordBottom.length; i++) {
+// Attach event listeners to each accordion
+for (var i = 0; i < accordTop.length; i++) {
     accordTop[i].addEventListener("click", playAccordion, false);
 }

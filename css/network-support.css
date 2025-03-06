@@ -42,7 +42,7 @@ h1 {
     max-width: 90%;
 }
 
-.accordion-top { /* the first <p> in the accordion divs */
+.accordion-top { /* The clickable header */
     background-color: var(--primary-green);
     color: var(--accent-yellow);
     font-weight: bold;
@@ -50,78 +50,22 @@ h1 {
     border-top-right-radius: 0.8rem;
     margin-bottom: 0;
     margin-top: 1rem;
-}
-
-.accordion-top:hover {
+    padding: 10px;
     cursor: pointer;
 }
 
-.accordion-bottom { /* the second <p> in the accordion divs */
+.accordion-bottom { /* The content */
     background-color: var(--neutral-white);
     color: var(--neutral-black);
     border-bottom-right-radius: 0.8rem;
     border-bottom-left-radius: 0.8rem;
-    height: auto;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 10px;
+    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
 }
 
-@keyframes accordion-open {
-    0% {
-        height: 0;
-    }
 
-    25% {
-        height: 0.5rem;
-    }
-
-    50% {
-        height: 1rem;
-    }
-
-    75% {
-        height: 1.5rem;
-    }
-
-    100% {
-        height: auto;
-    }
-}
-
-@keyframes accordion-closed {
-    0% {
-        height: 2rem;
-    }
-
-    25% {
-        height: 1.5rem;
-    }
-
-    50% {
-        height: 1rem;
-    }
-
-    75% {
-        height: 0.5rem;
-    }
-
-    100% {
-        height: 0rem;
-    }
-
-}
-
-.accordion-open {
-    display: block;
-    animation-name: accordion-open;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-}
-
-.accordion-closed {
-    display: none;
-    animation-name: accordion-closed;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-}
 
 /* Styles for layout of overview section */
 
