@@ -8,11 +8,7 @@ function playAccordion(event) {
                 // If it's open, close it
                 accordBottom[i].style.maxHeight = "0px";
             } else {
-                // Close all accordions first
-                for (var j = 0; j < accordBottom.length; j++) {
-                    accordBottom[j].style.maxHeight = "0px";
-                }
-                // Then open the clicked one
+                // Open it (without closing others)
                 accordBottom[i].style.maxHeight = accordBottom[i].scrollHeight + "px";
             }
         }

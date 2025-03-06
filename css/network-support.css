@@ -62,7 +62,7 @@ h1 {
     overflow: hidden;
     max-height: 0;
     padding: 0 10px;
-    transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+    transition: max-height 0.4s ease-out, padding 0.5s ease-out;
 }
 
 
@@ -94,7 +94,7 @@ h1 {
 }
 
 #instructor img {
-    max-width: 50%;
+    max-width: 80%;
     margin: 0.5rem;
 }
 
@@ -103,11 +103,41 @@ h1 {
     padding-top: 0;
 }
 
+#testimonials {
+    background-color: var(--neutral-gray);
+    width: 80%;
+    max-width: 80%;
+    text-align: center;
+    color: var(--neutral-black);
+    margin: 0 auto;
+    border-radius: 0.8rem;
+    margin-top: 2rem;
+}
+
+#testimonials h3 {
+    color: var(--neutral-black);
+}
+
+.arrow {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+#testimonial-container {
+    grid-template-columns: 1fr 8fr 1fr;
+    align-items: center;
+}
+
 /* Certs section */
 
 #certs-sect {
     color: var(--primary-green);
     font-weight: bold;
+    text-align: center;
 }
 
 .grid-container {
@@ -116,7 +146,6 @@ h1 {
 
 #certs-container {
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    text-align: center;
 }
 
 #certs-container img {
