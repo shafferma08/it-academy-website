@@ -190,6 +190,92 @@ html, body {
   
 }
 
+/* Testimonials Slider */
+
+/* Slideshow container */
+.quote-slideshow-container {
+  position: relative;
+  background-color: var(--neutral-gray);
+  margin-top: 40px;
+  max-width: 600px;  /* Set a max-width for the slideshow */
+  width: 100%;      /* Ensure responsiveness */
+  margin-top: 20px;
+  overflow: hidden;  /* Hide overflow from elements */
+  border-radius: var(--border-radius-3);
+}
+
+/* Quote slide styling */
+.quote-slide {
+  text-align: center;
+  padding: 20px;
+  display: none; /* Hide all slides by default */
+  background-color: var(--neutral-gray);
+  max-width: 75%;
+  margin: auto;
+}
+
+.quote-slide:first-child {
+  display: block; /* Show the first slide */
+}
+
+/* Next & previous buttons */
+.quote-prev, .quote-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: var(--neutral-white);
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.quote-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color */
+.quote-prev:hover, .quote-next:hover {
+  background-color: var(--neutral-black);
+  color: var(--accent-yellow);
+}
+
+/* Dot/bullet container */
+.quote-dot-container {
+  text-align: center;
+  padding: 10px;
+  background: #ddd;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Dot/bullet styling */
+.quote-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 4px; /* Slightly more space between dots */
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Active dot styling */
+.active, .quote-dot:hover {
+  background-color: var(--accent-yellow);
+}
+
+
+
+/* Italicize the quote text */
+q { font-style: italic; }
+
 /* Styling for the instructor section */
 .instructor {
   display: flex;
@@ -317,7 +403,7 @@ padding: 20px;
 }
 
 .active, .dot:hover {
-  background-color: #717171;
+  background-color: var(--primary-green);
 }
 
 /* Fading animation */
@@ -440,9 +526,6 @@ padding: 20px;
   .button-t h3 {
     font-size: 1.2rem;
   }
-
-
-  
 
 }
 

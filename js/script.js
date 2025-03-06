@@ -85,7 +85,8 @@ const ctx = document.getElementById('salaryChart').getContext('2d');
     });
 
 
-   /* Video and picture slideshow */
+   /* Video and picture slideshow below accordian */
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -127,7 +128,7 @@ function showSlides(n) {
 
 
 
-/* mobile / tablet slideshow */
+
 
 
 
