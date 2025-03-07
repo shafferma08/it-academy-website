@@ -116,20 +116,11 @@ h1 {
 
 #testimonials h3 {
     color: var(--neutral-black);
+    padding-top: 1rem;
 }
 
-.arrow {
-    font-size: 4rem;
-    font-weight: bold;
-}
-
-.arrow:hover {
-    cursor: pointer;
-}
-
-#testimonial-container {
-    grid-template-columns: 1fr 8fr 1fr;
-    align-items: center;
+#name {
+    padding-bottom: 1rem;
 }
 
 /* Certs section */
