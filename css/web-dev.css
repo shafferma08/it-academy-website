@@ -1,5 +1,33 @@
 @import url(styles.css);
 
+/* Universal styles */
+
+p {
+  margin-bottom: 15px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  justify-items: center;
+}
+
+.grid-item {
+  width: 300px;
+  height: 200px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: black;
+  border-radius: 8px;
+}
+
 /* Hero image section */
 .background-container {
     min-height: 500px;
@@ -54,33 +82,32 @@
     display:flex;
     justify-content: center;
     gap:60px;
+    align-items: center;
   }
   .image-section{
-    width: 600px;
+    max-width: 600px;
     height:auto;
-  
+    width: 100%;
   }
 
 
   .program-box {
     background: #FFC72C; /* Yellow Background */
     padding: 20px;
-    width: 200px; 
+    width: 250px; 
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     font-family: Arial, sans-serif;
     text-align: left;
     color: #222;
   }
-  
-  .program-box p {
-    margin-bottom: 15px;
-    line-height: 1.5;
+
+  .program-box-info h3 {
+    color: #222;
   }
   
   .program-link {
     color: #009245; /* Green Link */
-    text-decoration: none;
     font-weight: bold;
   }
   
@@ -121,10 +148,12 @@
     justify-content: space-between;
     background-color: #2D7D46; 
     padding: 20px;
-    border-radius: 35px;
+    border-radius: 20px;
     color: white;
     text-align: center;
     gap: 20px;
+    max-width: 850px;
+    margin: 2rem auto;
   }
   
   .info-grid div {
@@ -142,7 +171,10 @@
   }
   
 
-
+.learn-section {
+  background-color: var(--neutral-black);
+  display: flex;
+}
 
 .certifications-section{
   background-color: var(--neutral-black);
@@ -263,6 +295,41 @@
     .overlay h1 {
         font-size: 1.9rem;
     }
+
+    .class-info {
+      flex-direction: column;
+    }
+
+    .image-div {
+      margin: 0 auto;
+    }
+
+    .program-box {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.5rem;
+    }
+
+    .program-box-info {
+      display: flex;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .apply-btn {
+      margin: 0 auto;
+    }
+
+    .info-grid {
+      max-width: 600px;
+    }
+
+
   }
 
 
