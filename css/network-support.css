@@ -77,6 +77,7 @@ h1 {
     background-color: var(--neutral-black);
     text-align: center;
     color: var(--neutral-white);
+    margin-bottom: 0;
 }
 
 #instructor {
@@ -143,10 +144,19 @@ h1 {
     width: 50%;
 }
 
+#sec-plus {
+    width: 100%;
+}
+
 .divider-line {
     border-bottom: 0.2rem solid var(--primary-green);
     margin-right: 15%;
     margin-left: 15%;
+}
+
+#apply-btn {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
 }
 
 /* Career Information section */
@@ -202,4 +212,57 @@ h1 {
 
 .contact-field h2 {
     color: var(--neutral-white);
+}
+
+/* Tablet styles (768px to 376px) */
+
+@media screen and (max-width: 768px) and (min-width: 376px) {
+
+    /* General styles */
+    .container {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /* Overview section */
+    #overview-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Certs section */
+    #certs-sect figure {
+        margin: 0.5rem;
+    }
+
+    #certs-sect img {
+        width: 60%;
+    }
+
+    /* Future section */
+    .contact-field {
+        width: 50%;
+    }
+
+    #yt {
+        width: 75%;
+    }
+}
+
+/* Mobile styles (375px and below) */
+
+@media screen and (max-width: 450px) {
+    /* Certs section */
+    #certs-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* Future section */
+    .contact-field {
+        width: 70%;
+    }
+    
+    #yt {
+        width: 95%;
+    }
 }
