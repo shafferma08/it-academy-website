@@ -50,6 +50,198 @@
     flex-grow: 1;
   }
 
+  .class-info{
+    display:flex;
+    justify-content: center;
+    gap:60px;
+  }
+  .image-section{
+    width: 600px;
+    height:auto;
+  
+  }
+
+
+  .program-box {
+    background: #FFC72C; /* Yellow Background */
+    padding: 20px;
+    width: 200px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    text-align: left;
+    color: #222;
+  }
+  
+  .program-box p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  .program-link {
+    color: #009245; /* Green Link */
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .program-link:hover {
+    text-decoration: underline;
+  }
+  
+  em {
+    color: #666;
+    font-style: italic;
+  }
+  
+  .apply-btn {
+    background: #009245; /* Green Button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Space between text and arrow */
+    transition: background 0.3s ease;
+  }
+  
+  .apply-btn:hover {
+    background: #007a36; /* Darker green on hover */
+  }
+  
+  .arrow {
+    font-size: 18px;
+  }
+
+  .info-grid {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2D7D46; 
+    padding: 20px;
+    border-radius: 35px;
+    color: white;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .info-grid div {
+    flex: 1;
+  }
+  
+  .info-grid span {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .info-grid p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
+
+
+
+.certifications-section{
+  background-color: var(--neutral-black);
+  
+}
+.certifications-section h3{
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+
+.certifications{
+  display: flex;
+  padding:20px;
+  border-radius: 30px;
+  background-color: lightgrey;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+
+}
+
+
+
+
+
+ 
+
+  .instructor-card{
+    background-color: #2D7D46; 
+    padding:25px;
+    width:300px;
+    border-radius: 30px;
+    display:flex;
+    justify-content: center;
+  }
+
+  .instructor-info{
+    background-color: white;
+    padding:10px;
+    border-radius: 20px;
+  }
+
+
+
+
+  .earning{
+    background-color: #FFC72C;
+    padding:20px;
+    width:500px;
+    font-family: Arial, sans-serif;
+  }
+
+  .earning-salary{
+
+  }
+
+  .earning h3,h1{
+    color:black;
+    font-family: Arial, sans-serif;
+  }
+
+  .earning-course{
+    color:green;
+    justify-content:right
+  } 
+
+  .contact-box{
+    display:flex;
+    background-color: black;
+    gap:300px;
+
+  }
+
+  .contacts {
+    color:#2D7D46;
+    justify-content: left;
+    font-size: medium;
+  }
+
+  .creation{
+    color:#FFC72C
+  }
+  
+  .school{
+    text-align: right;
+    color:whitesmoke;
+    font-size: medium;
+    justify-content: left;
+  
+  }
+  
+
+
+
     /* Tablet Media Query */
 
     @media only screen and (max-width: 1023px) {
@@ -73,3 +265,7 @@
     }
   }
 
+
+  
+  
+  
