@@ -466,6 +466,44 @@ padding: 20px;
   line-height: 1.5;
 }
 
+/* Hide slider on desktop */
+@media (min-width: 1024px) {
+  .auto-slider {
+      display: none;
+  }
+}
+
+/* Mobile & Tablet Slider Styles */
+.auto-slider {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 250px;
+  overflow: hidden;
+  margin: 20px auto;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  display: flex;
+  opacity: 1;
+}
+
+.slide img {
+  height: 150px;
+  border-radius: 50%;
+}
 
 .footer{
   display: flex;

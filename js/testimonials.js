@@ -36,3 +36,29 @@ function showQuoteSlides(n) {
   slides[quoteSlideIndex - 1].style.display = "block";
   dots[quoteSlideIndex - 1].className += " active";
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  // Detect screen size and only run slider if mobile/tablet
+  function isMobileOrTablet() {
+      return window.innerWidth < 1024;
+  }
+
+  if (isMobileOrTablet()) {
+      const slides = document.querySelectorAll(".auto-slider .slide");
+      let currentIndex = 0;
+
+      function showSlide(index) {
+          slides.forEach(slide => slide.classList.remove("active"));
+          slides[index].classList.add("active");
+      }
+
+      function nextSlide() {
+          currentIndex = (currentIndex + 1) % slides.length;
+          showSlide(currentIndex);
+      }
+
+      // Auto slide every 3 seconds
+      setInterval(nextSlide, 3000);
+  }
+});
