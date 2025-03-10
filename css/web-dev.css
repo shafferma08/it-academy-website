@@ -191,6 +191,35 @@ p {
   margin-bottom: 2rem;
 }
 
+/* Styles for accordion */
+.accordion {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.accordion-top { /* The clickable header */
+  background-color: var(--primary-green);
+  color: var(--accent-yellow);
+  font-weight: bold;
+  border-top-left-radius: 0.8rem;
+  border-top-right-radius: 0.8rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.accordion-bottom { /* The content */
+  background-color: var(--neutral-white);
+  color: var(--neutral-black);
+  border-bottom-right-radius: 0.8rem;
+  border-bottom-left-radius: 0.8rem;
+  overflow: hidden;
+  max-height: 0;
+  padding: 0 10px;
+  transition: max-height 0.4s ease-out, padding 0.5s ease-out;
+}
+
 .certifications-section{
   background-color: var(--neutral-black);
   
@@ -236,16 +265,17 @@ p {
   
 }
 
-
- 
-
   .instructor-card{
     background-color: #2D7D46; 
     padding:25px;
     width:300px;
     border-radius: 30px;
     display:flex;
+    flex-direction: column;
     justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+
   }
 
   .instructor-info{
@@ -363,6 +393,10 @@ p {
 
     .info-grid {
       max-width: 600px;
+    }
+
+    .learn-container {
+      flex-direction: column;
     }
 
 
