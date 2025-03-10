@@ -149,7 +149,14 @@ html, body {
 
 .certications-img {
   display: flex;
-  gap: 40px;
+  max-width: 600px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.certications-img img {
+  flex: 1;
+  text-align: center;
 }
 
 .learn-img img {
@@ -184,6 +191,7 @@ html, body {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+ 
 }
 
 .panel p {
@@ -198,6 +206,7 @@ html, body {
   background-color: var(--neutral-gray);
   margin-top: 40px;
   max-width: 600px;  /* Set a max-width for the slideshow */
+  height: 250px;
   width: 100%;      /* Ensure responsiveness */
   margin-top: 20px;
   overflow: hidden;  /* Hide overflow from elements */
@@ -211,6 +220,7 @@ html, body {
   display: none; /* Hide all slides by default */
   background-color: var(--neutral-gray);
   max-width: 75%;
+  
   margin: auto;
 }
 
@@ -466,7 +476,8 @@ padding: 20px;
   line-height: 1.5;
 }
 
-/* Hide slider on desktop */
+
+/* AUTO SLDIER STYLES */
 @media (min-width: 1024px) {
   .auto-slider {
       display: none;
@@ -498,6 +509,7 @@ padding: 20px;
 .slide.active {
   display: flex;
   opacity: 1;
+  background-color: var(--neutral-black);
 }
 
 .slide img {
@@ -530,7 +542,7 @@ padding: 20px;
 
 
 
-/* Media Queries */
+/* Media Queries For smaller screens: Mobile */
 @media screen and (max-width: 400px){
   
 
@@ -568,10 +580,7 @@ padding: 20px;
 }
 
 
-
-
-/* For smaller screens: Mobile */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 561px) {
   
   body{
     width: 100%;
@@ -635,6 +644,89 @@ padding: 20px;
     flex-direction: column;
   }
 } 
+
+
+/* Media Queries For smaller screens: tablet */
+
+/* Larger mobile screens & small tablets */
+@media screen and (min-width: 562px) and (max-width: 767px) {
+  .background-container {
+    background-image: none;
+    
+  }
+
+  .overlay {
+    border-radius: 0;
+  }
+
+  .container-wrapper {
+    flex-direction: column;
+  }
+
+  .container {
+    max-width: 460px;
+  }
+
+  .comptia img {
+    /* display: none; */
+  }
+
+  .middle {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .learning {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .certications-img {
+    max-width: 500px;
+    width: 100%;
+    
+  }
+
+  iframe {
+    width: 500px;
+    height: 325px;
+  }
+
+  
+
+  .mySlides {
+    width: 500px;
+    height: 325px;
+
+  }
+
+.prev, .next {
+  color: var(--neutral-white);
+}
+
+
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  .graph-box {
+    max-width: 500px;
+  }
+
+  .footer-img-box {
+    max-width: 550px;
+    width: 100%;
+    justify-content: center;
+    gap: 10px;
+    
+  }
+  .footer-img-box img {
+    width: 80%;
+  }
+}
+
 
 
 
