@@ -202,7 +202,24 @@ p {
 }
 
 
+.box{
+  background-color: #007a36;
 
+}
+
+
+
+.box h3{
+  color:#FFC72C
+}
+
+
+.box-2{
+  background-color: #666;
+  padding:20px;
+  color:white;
+  
+}
 
 
  
@@ -243,7 +260,11 @@ p {
 
   .earning-course{
     color:green;
-    justify-content:right
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 15px;
+    
   } 
 
   .contact-box{
