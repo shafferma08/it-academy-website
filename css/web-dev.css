@@ -169,11 +169,26 @@ p {
     margin: 0;
     font-size: 1rem;
   }
-  
 
 .learn-section {
   background-color: var(--neutral-black);
+  padding: 3rem 0;
+}
+
+.learn-container {
+  max-width: 1400px;
   display: flex;
+  justify-content: center;
+  align-items: top;
+  gap: 20px;
+  margin: 0 auto;
+}
+
+.learn-container h2 {
+  text-decoration: underline;
+  color: var(--neutral-white);
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .certifications-section{
