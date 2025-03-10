@@ -161,6 +161,29 @@ h1 {
 
 /* Career Information section */
 
+#info-container {
+    grid-template-columns: 1fr 1fr;
+}
+
+#graph {
+    border: 0.5rem solid var(--primary-green);
+    width: 80%;
+    justify-self: center;
+    margin-bottom: 0.5rem;
+}
+
+#report {
+    color: var(--neutral-black);
+}
+
+#onestop-logo {
+    align-self: center;
+}
+
+#projected-mobile {
+    display: none;
+}
+
 #career-info-sect {
     text-align: center;
 }
@@ -255,6 +278,44 @@ h1 {
     /* Certs section */
     #certs-container {
         grid-template-columns: 1fr;
+    }
+
+    /* Career section */
+    #info-container {
+        grid-template-columns: 1fr;
+    }
+
+    #graph {
+        width: 90%;
+    }
+
+    #onestop-logo {
+        margin-top: 0.5rem;
+    }
+
+    #report {
+        font-size: 2rem;
+    }
+
+    #projected-desktop {
+        display: none;
+    }
+
+    #projected-mobile {
+        display: block;
+        color: var(--primary-green);
+        font-weight: bold;
+    }
+
+    #projected-mobile li {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #projected-mobile li::marker {
+        content: "▶ ";
+        font-size: 1.15rem;
+        color: var(--primary-green)
     }
 
     /* Future section */
