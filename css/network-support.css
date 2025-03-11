@@ -275,6 +275,13 @@ h1 {
 /* Mobile styles (375px and below) */
 
 @media screen and (max-width: 450px) {
+    /* General styles */
+    .container {
+        width: 100%;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
     /* Certs section */
     #certs-container {
         grid-template-columns: 1fr;
@@ -291,6 +298,10 @@ h1 {
 
     #onestop-logo {
         margin-top: 0.5rem;
+    }
+
+    #onestop-logo img {
+        width: 60%;
     }
 
     #report {
