@@ -193,7 +193,7 @@ p {
 
 .learn-section {
   background-color: var(--neutral-black);
-  padding: 3rem 0;
+  padding: 3rem 4rem 3rem 2rem;
 }
 
 .learn-container {
@@ -202,10 +202,14 @@ p {
   justify-content: center;
   align-items: top;
   gap: 20px;
-  margin: 0 auto;
+
 }
 
-.learn-container h2 {
+.learn-container, .project-container, .certification-container {
+  margin: 0 auto 3rem auto;
+}
+
+.learn-section h2 {
   text-decoration: underline;
   color: var(--neutral-white);
   text-align: center;
@@ -241,7 +245,7 @@ p {
   transition: max-height 0.4s ease-out, padding 0.5s ease-out;
 }
 
-.certifications-section{
+/* .certifications-section{
   background-color: var(--neutral-black);
   
 }
@@ -252,7 +256,7 @@ p {
   margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
-}
+} */
 
 
 .certifications{
@@ -263,6 +267,8 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
 
 }
 
@@ -301,11 +307,11 @@ p {
 
 
 
-.container {
+.student-earning-container {
   display: flex;  
   justify-content: space-between; 
   gap: 20px; 
-  align-items: flex-start; 
+  align-items: center; 
 }
 
 
@@ -397,24 +403,32 @@ p {
   
   }
   
+  /* Restrict to max 3 columns at larger screens */
+  @media (min-width: 1299px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr); /* Max 3 columns */
+    }
+  }
 
+  /* Tablet Media Query */
 
-
-    /* Tablet Media Query */
-
-    @media only screen and (max-width: 1023px) {
-        .overlay {
-            flex-direction: column;
-            height: 100%;
-            padding: 2rem;
-            text-align: center;
-        }
-    
-        .overlay-logo {
-            display: none;
-        }
-    
+  @media only screen and (max-width: 1023px) {
+      .overlay {
+          flex-direction: column;
+          height: 100%;
+          padding: 2rem;
+          text-align: center;
       }
+  
+      .overlay-logo {
+          display: none;
+      }
+
+      .student-earning-container {
+        flex-direction: column;
+      }
+  
+    }
 
   /* Mobile Media Query */
   @media only screen and (max-width: 767px) {
