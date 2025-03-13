@@ -28,6 +28,10 @@ p {
   border-radius: 8px;
 }
 
+.grid-item img {
+  width: 100%;
+}
+
 /* Hero image section */
 .background-container {
     min-height: 500px;
@@ -145,6 +149,7 @@ p {
 
   .info-grid {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: #2D7D46; 
     padding: 20px;
@@ -355,7 +360,7 @@ p {
     width:500px;
     font-family: Arial, sans-serif;
     flex:1;
-    
+    width: 100%;
   }
 
   .earning h3,h1{
@@ -371,7 +376,13 @@ p {
     gap: 15px;
   } 
 
+  .earning-course p {
+    flex: 1 1 calc(50% - 15px);
+  }
 
+  .image-salary img {
+    width: 100%;
+  }
 
   .contact-box{
     display:flex;
@@ -429,12 +440,17 @@ p {
 
   /* Mobile Media Query */
   @media only screen and (max-width: 767px) {
+    section {
+      margin-bottom: var(--spacing-md);
+    }
+
     .overlay h1 {
         font-size: 1.9rem;
     }
 
     .class-info {
       flex-direction: column;
+      gap: 15px;
     }
 
     .image-div {
@@ -453,9 +469,9 @@ p {
     }
 
     .program-box-info {
-      display: flex;
+      /* display: flex;
       justify-content: space-around;
-      gap: 20px;
+      gap: 20px; */
     }
 
     .apply-btn {
@@ -470,6 +486,9 @@ p {
       flex-direction: column;
     }
 
+    .instructor-card {
+      width: 100%;
+    }
 
   }
 
