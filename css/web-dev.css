@@ -358,10 +358,6 @@ p {
     
   }
 
-  .earning-salary{
-
-  }
-
   .earning h3,h1{
     color:black;
     font-family: Arial, sans-serif;
@@ -371,11 +367,11 @@ p {
     color:green;
     display: flex;
     flex-wrap: wrap;
-    justify-content: left;
+    justify-content: center;
     gap: 15px;
-    text-align: center;
-    
   } 
+
+
 
   .contact-box{
     display:flex;
@@ -427,7 +423,8 @@ p {
       .student-earning-container {
         flex-direction: column;
       }
-  
+
+      
     }
 
   /* Mobile Media Query */
