@@ -485,14 +485,17 @@
   font-weight: bold;
 }
 
-/*  fixes to do when media queriying, fix articulation exiting the section on size morph  */
+/*  fixes to do when applying responsivity,
+    fix word box sizing witin the
+   .course-general-agreement-options, & .section-last sections
+*/
 
 /* 
   Breakpoints for the media queries
-  I can't tell em apart
   By default breakpoints
   375px, 768px, 1440px
 */
+
 /* Tablet (Medium screens) */
 @media screen and (max-width: 1023px) {
   
@@ -503,7 +506,7 @@
   .cybersecurity-staff-course-summary {
     padding: 0;
     margin: 0;
-}
+  }
 
 
 }
@@ -546,5 +549,4 @@
 
 }
 
-/* Mobile switch @ 723>724 */
-
+/* Perhaps more CSS here if necessary? */
