@@ -368,7 +368,7 @@ p {
     font-family: Arial, sans-serif;
   }
 
-  .earning-course{
+  .earning-course a{
     color:green;
     display: flex;
     flex-wrap: wrap;
