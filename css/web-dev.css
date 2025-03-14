@@ -361,6 +361,8 @@ p {
     font-family: Arial, sans-serif;
     flex:1;
     width: 100%;
+    display:block;
+    margin: 5px 0;
   }
 
   .earning h3,h1{
@@ -370,7 +372,7 @@ p {
 
   .earning-course a{
     color:green;
-    display: flex;
+    display: block;
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
