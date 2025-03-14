@@ -51,10 +51,10 @@ let Both = false;
 
 function startSurvey() {
     AnswerFour.style.display = "none";
-    Question.innerHTML = "What is your preferred campus?";
-    AnswerOne.innerHTML = "Clearwater Campus";
-    AnswerTwo.innerHTML = "St. Pete Campus";
-    AnswerThree.innerHTML = "Both/Either Campus Works For Me";
+    Question.innerHTML = "What field are you most interested in pursuing?";
+    AnswerOne.innerHTML = "Technology & Engineering";
+    AnswerTwo.innerHTML = "Health & Wellness";
+    AnswerThree.innerHTML = "Creative Arts & Design";
 
     AnswerOne.onclick = function () { questionTwo("Clearwater"); };
     AnswerTwo.onclick = function () { questionTwo("StPete"); };
@@ -278,7 +278,7 @@ function questionFourList(Location, FinalAnswerChoice) {
                 // Skilled Trades & Industrial Technology (Working with tools or machinery)
                 Interests.innerHTML = "Based on your interest in working with tools and machinery, here are some program suggestions for you...";
                 ProgramOne.innerHTML = "Electricity";
-                ProgramTwo.innerHTML = "HVACR 1";
+                ProgramTwo.innerHTML = "HVAC 1";
                 ProgramThree.innerHTML = "Welding Technology";
                 ProgramFour.innerHTML = "Welding Technology Advanced";
                 ProgramFive.innerHTML = "Plumbing";
