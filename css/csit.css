@@ -153,6 +153,16 @@ html, body {
   
 }
 
+.wyl h2 {
+  color: var(--neutral-white);
+}
+
+.wyl-text h3 {
+  color: var(--neutral-white);
+  text-align: center;
+  font-size: 1rem;
+}
+
 .certications-img {
   display: flex;
   max-width: 600px;
@@ -304,6 +314,7 @@ q { font-style: italic; }
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 750px;
 }
 
 .green {
@@ -311,6 +322,7 @@ q { font-style: italic; }
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
   background-color: var(--primary-green);
   padding-top: 20px;
   border-radius: 10px;
@@ -342,6 +354,7 @@ padding: 20px;
 
 .bottom {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   background-color: var(--neutral-black);
   padding-top: 35px;
@@ -596,6 +609,8 @@ padding: 20px;
     display: none;
   }
 
+  
+
 }
 
 
@@ -630,6 +645,10 @@ padding: 20px;
     display: none;
   }
 
+  .instructor {
+  height: 50%;
+  }
+
   .certications-img {
     flex-direction: column; /* Stack images vertically */
     gap: 30px; /* Adjust space between images */
@@ -659,8 +678,16 @@ padding: 20px;
 
   }
 
+  .graph-box {
+    width: 100%;
+  }
+
   .footer-img-box{
     flex-direction: column;
+  }
+
+  .footer-text h3 {
+    font-size: 1.3rem;
   }
 } 
 
@@ -699,6 +726,10 @@ padding: 20px;
   .learning {
     max-width: 500px;
     width: 100%;
+  }
+
+  .instructor{
+    height: 50%;
   }
 
   .certications-img {
@@ -779,12 +810,18 @@ padding: 20px;
 
   .comptia img {
     height: 200px;
+
+  }
+
+  .instructor {
+    height: 50%;
   }
 
   .green {
     flex-direction: row;
     padding: 10px;
     width: 550px;
+    
   }
 
   .cotton-pht {
